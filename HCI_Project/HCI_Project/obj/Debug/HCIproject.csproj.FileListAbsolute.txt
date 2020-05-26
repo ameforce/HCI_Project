@@ -1,0 +1,11 @@
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\bin\Debug\WindowsFormsApp17.exe.config
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\bin\Debug\WindowsFormsApp17.exe
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\bin\Debug\WindowsFormsApp17.pdb
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCIproject.csprojAssemblyReference.cache
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\WindowsFormsApp17.Form1.resources
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\WindowsFormsApp17.Properties.Resources.resources
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCIproject.csproj.GenerateResource.cache
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCIproject.csproj.CoreCompileInputs.cache
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\WindowsFormsApp17.exe
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\WindowsFormsApp17.pdb
+C:\Users\ldi01\source\repos\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\WindowsFormsApp17.Form2.resources

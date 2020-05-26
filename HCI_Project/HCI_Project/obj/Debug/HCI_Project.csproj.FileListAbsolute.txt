@@ -1,0 +1,10 @@
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\bin\Debug\HCI_Project.exe.config
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\bin\Debug\HCI_Project.exe
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\bin\Debug\HCI_Project.pdb
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.csprojAssemblyReference.cache
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.Properties.Resources.resources
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.exe
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.pdb
+C:\Users\김종인\OneDrive\Workspace\Workspace_C#\WindowsFormsApp17\WindowsFormsApp17\obj\Debug\HCI_Project.Form1.resources
