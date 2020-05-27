@@ -209,5 +209,10 @@ namespace HCI_Project
             panel4.Show();
             panel5.Show();
         }
+
+        private void 보기VToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
