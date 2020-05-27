@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
@@ -42,31 +41,20 @@
             this.btnunder = new System.Windows.Forms.Button();
             this.btnbold = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button15);
-            this.panel2.Controls.Add(this.button17);
-            this.panel2.Controls.Add(this.button18);
-            this.panel2.Location = new System.Drawing.Point(303, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(296, 198);
-            this.panel2.TabIndex = 25;
             // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(11, 24);
+            this.button15.Location = new System.Drawing.Point(3, 22);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(28, 32);
             this.button15.TabIndex = 16;
@@ -77,7 +65,7 @@
             this.button17.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(79, 24);
+            this.button17.Location = new System.Drawing.Point(71, 22);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(28, 32);
             this.button17.TabIndex = 18;
@@ -88,7 +76,7 @@
             this.button18.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(45, 24);
+            this.button18.Location = new System.Drawing.Point(37, 22);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(28, 32);
             this.button18.TabIndex = 19;
@@ -195,20 +183,10 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btncolor);
             this.panel1.Controls.Add(this.button10);
-            this.panel1.Location = new System.Drawing.Point(1, -1);
+            this.panel1.Location = new System.Drawing.Point(1, 17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 198);
+            this.panel1.Size = new System.Drawing.Size(253, 136);
             this.panel1.TabIndex = 27;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("한컴 고딕", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(108, 165);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 18);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "글꼴";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox1
             // 
@@ -231,15 +209,37 @@
             this.comboBox1.Size = new System.Drawing.Size(60, 20);
             this.comboBox1.TabIndex = 28;
             // 
-            // label2
+            // label1
             // 
-            this.label2.Font = new System.Drawing.Font("한컴 고딕", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(118, 165);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 18);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "단락";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Font = new System.Drawing.Font("한컴 고딕", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(96, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "글꼴";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.button17);
+            this.panel3.Controls.Add(this.button15);
+            this.panel3.Controls.Add(this.button18);
+            this.panel3.Location = new System.Drawing.Point(255, 17);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(253, 136);
+            this.panel3.TabIndex = 28;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("한컴 고딕", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(98, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 18);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "단락";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form2
             // 
@@ -247,20 +247,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(797, 571);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Name = "Form2";
             this.Text = "서식기능";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
-            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btncolor;
@@ -275,6 +273,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label3;
     }
 }

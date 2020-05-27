@@ -196,6 +196,11 @@ namespace HCI_Project
         //서식기능 메뉴바
         private void ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+        
+        }
+
+        private void 홈ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             child2.Hide();
             child.Hide();
             panel1.Show();
