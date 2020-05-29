@@ -10,6 +10,7 @@ using System.IO;
 using System.Windows.Forms;
 
 
+
 namespace HCI_Project
 {
     public partial class Form1 : Form
@@ -57,16 +58,18 @@ namespace HCI_Project
         private void btnSave_Click(object sender, EventArgs e)
         {
             saveFileDialog.Filter = "텍스트파일|*.txt";
-            
-                if(saveFileDialog.ShowDialog() == DialogResult.OK)
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                StreamWriter sw = new StreamWriter(
+                Function f = new Function();
+                f.save_File(text.Text, "C:\\Users\\enmso\\Desktop", saveFileDialog.FileName);
+                /*StreamWriter sw = new StreamWriter(
                     saveFileDialog.FileName, false, Encoding.Default);
                 MessageBox.Show("파일 저장 : " + saveFileDialog.FileName);
 
          
                 sw.Write(text.Text);
                 sw.Close();
+                */
             }
         }
       
