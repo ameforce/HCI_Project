@@ -61,7 +61,10 @@ namespace HCI_Project
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Function f = new Function();
-                f.save_File(text.Text, "C:\\Users\\enmso\\Desktop", saveFileDialog.FileName);
+                if (f.save_File(text.Text, saveFileDialog.FileName))
+                {
+                    f.change_Title(saveFileDialog.FileName + " (저장됨)");
+                }
                 /*StreamWriter sw = new StreamWriter(
                     saveFileDialog.FileName, false, Encoding.Default);
                 MessageBox.Show("파일 저장 : " + saveFileDialog.FileName);
