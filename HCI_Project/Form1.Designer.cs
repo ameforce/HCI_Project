@@ -213,7 +213,7 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.menuStrip1.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.홈ToolStripMenuItem,
@@ -226,7 +226,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(911, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(911, 26);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -234,7 +234,7 @@
             // 
             this.홈ToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.홈ToolStripMenuItem.Name = "홈ToolStripMenuItem";
-            this.홈ToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
+            this.홈ToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.홈ToolStripMenuItem.Text = "  홈    I";
             this.홈ToolStripMenuItem.Click += new System.EventHandler(this.홈ToolStripMenuItem_Click);
             // 
@@ -249,56 +249,56 @@
             this.인쇄ToolStripMenuItem,
             this.toolStripSeparator2,
             this.끝내기ToolStripMenuItem});
-            this.ToolStripMenuItem.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             this.ToolStripMenuItem.Text = "파일(&F)";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // 새로만들기ToolStripMenuItem
             // 
             this.새로만들기ToolStripMenuItem.Name = "새로만들기ToolStripMenuItem";
-            this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.새로만들기ToolStripMenuItem.Text = "새로만들기";
             // 
             // 열기ToolStripMenuItem
             // 
             this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
-            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.열기ToolStripMenuItem.Text = "열기";
             // 
             // 저장ToolStripMenuItem
             // 
             this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
             this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.저장ToolStripMenuItem.Text = "저장";
             this.저장ToolStripMenuItem.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // 다른이름으로저ToolStripMenuItem
             // 
             this.다른이름으로저ToolStripMenuItem.Name = "다른이름으로저ToolStripMenuItem";
-            this.다른이름으로저ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.다른이름으로저ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.다른이름으로저ToolStripMenuItem.Text = "다른이름으로 저장";
             // 
             // 인쇄ToolStripMenuItem
             // 
             this.인쇄ToolStripMenuItem.Name = "인쇄ToolStripMenuItem";
             this.인쇄ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.인쇄ToolStripMenuItem.Text = "인쇄";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(195, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
             this.끝내기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             // 
             // 편집ToolStripMenuItem
@@ -313,57 +313,57 @@
             this.찾기ToolStripMenuItem,
             this.다음찾기ToolStripMenuItem});
             this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
-            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(69, 26);
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             this.편집ToolStripMenuItem.Click += new System.EventHandler(this.편집ToolStripMenuItem_Click);
             // 
             // 실행취소UToolStripMenuItem
             // 
             this.실행취소UToolStripMenuItem.Name = "실행취소UToolStripMenuItem";
-            this.실행취소UToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.실행취소UToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.실행취소UToolStripMenuItem.Text = "실행취소(&U)";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(208, 6);
             // 
             // 잘라내기TToolStripMenuItem
             // 
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
             this.잘라내기TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.잘라내기TToolStripMenuItem.Text = "잘라내기(&T)";
             // 
             // 복사ToolStripMenuItem
             // 
             this.복사ToolStripMenuItem.Name = "복사ToolStripMenuItem";
             this.복사ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.복사ToolStripMenuItem.Text = "복사";
             // 
             // 붙여넣기ToolStripMenuItem
             // 
             this.붙여넣기ToolStripMenuItem.Name = "붙여넣기ToolStripMenuItem";
             this.붙여넣기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.붙여넣기ToolStripMenuItem.Text = "붙여넣기";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // 찾기ToolStripMenuItem
             // 
             this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
-            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.찾기ToolStripMenuItem.Text = "찾기";
             // 
             // 다음찾기ToolStripMenuItem
             // 
             this.다음찾기ToolStripMenuItem.Name = "다음찾기ToolStripMenuItem";
-            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.다음찾기ToolStripMenuItem.Text = "바꾸기";
             // 
             // 컨트롤CToolStripMenuItem
@@ -371,27 +371,27 @@
             this.컨트롤CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1});
             this.컨트롤CToolStripMenuItem.Name = "컨트롤CToolStripMenuItem";
-            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(72, 26);
+            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(70, 22);
             this.컨트롤CToolStripMenuItem.Text = "서식(&O)";
             this.컨트롤CToolStripMenuItem.Click += new System.EventHandler(this.컨트롤CToolStripMenuItem_Click);
             // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 28);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 31);
             this.toolStripComboBox1.Text = "글꼴";
             // 
             // 보기VToolStripMenuItem
             // 
             this.보기VToolStripMenuItem.Name = "보기VToolStripMenuItem";
-            this.보기VToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.보기VToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
             this.보기VToolStripMenuItem.Text = "삽입";
             this.보기VToolStripMenuItem.Click += new System.EventHandler(this.보기VToolStripMenuItem_Click);
             // 
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(85, 26);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.도움말ToolStripMenuItem.Text = "도움말(&H)";
             // 
             // button9
@@ -434,7 +434,7 @@
             // 
             // label11
             // 
-            this.label11.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label11.Location = new System.Drawing.Point(193, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 22);
@@ -458,7 +458,7 @@
             // 
             // label10
             // 
-            this.label10.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label10.Location = new System.Drawing.Point(3, 144);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 22);
@@ -482,7 +482,7 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.Location = new System.Drawing.Point(75, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 22);
@@ -492,7 +492,7 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.Location = new System.Drawing.Point(193, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 22);
@@ -502,7 +502,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.Location = new System.Drawing.Point(193, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 22);
@@ -512,7 +512,7 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.Location = new System.Drawing.Point(193, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 22);
@@ -522,7 +522,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(75, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 22);
@@ -532,7 +532,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(3, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 22);
@@ -612,7 +612,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.Location = new System.Drawing.Point(3, 70);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 22);
@@ -622,7 +622,7 @@
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label8.Location = new System.Drawing.Point(66, 70);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 22);
@@ -632,7 +632,7 @@
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label9.Location = new System.Drawing.Point(129, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 22);
@@ -828,6 +828,7 @@
             this.text.Size = new System.Drawing.Size(914, 499);
             this.text.TabIndex = 26;
             this.text.Text = "";
+            this.text.TextChanged += new System.EventHandler(this.text_TextChanged);
             // 
             // panel3
             // 
@@ -844,7 +845,7 @@
             // 
             // label13
             // 
-            this.label13.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label13.Location = new System.Drawing.Point(46, 49);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(69, 22);
@@ -854,7 +855,7 @@
             // 
             // label12
             // 
-            this.label12.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label12.Location = new System.Drawing.Point(46, 11);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 22);
@@ -887,6 +888,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
+            this.Text = "TEXT EDITOR";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

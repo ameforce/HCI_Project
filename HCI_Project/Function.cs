@@ -11,18 +11,24 @@ namespace HCI_Project
     class Function
     {
         public Function() { }   //생성자
+
+        //파일 존재 여부 체크.
         public Boolean check_File(string route)
         {
             FileInfo fi = new FileInfo(route);
             if (fi.Exists) return true;
             else return false;
         }
+
+        //현재 텍스트와 저장된 파일의 일치 여부 체크.
+        public Boolean check_Content(string route, string content)
+        {
+            string temp_data = System.IO.File.ReadAllText(route, Encoding.Default);
+            return temp_data.Equals(content);
+        }
+
         public Boolean save_File(string text, string route)
         {
-            if (check_File(route))
-            {
-                if (MessageBox.Show("해당 위치에 파일이 이미 존재합니다.\n덮어씌우시겠어요?", "경고", MessageBoxButtons.YesNo) == DialogResult.No) return false;
-            }
             System.IO.File.WriteAllText(route, text, Encoding.Default);
             if (check_File(route)) return true;
             else
@@ -32,9 +38,15 @@ namespace HCI_Project
             }
         }
 
-        public void change_Title(String text)
+        public String open_File(string route){ return System.IO.File.ReadAllText(route, Encoding.Default); }
+
+        public void change_Title(Boolean TF, string route)
         {
-            Form1.ActiveForm.Text = text;
+            string temp_data;
+            if (route == null) route = "이름 없음";
+            if (TF) temp_data = route + " (저장됨)";
+            else temp_data = route + " (저장 안 됨)";
+            Form1.ActiveForm.Text = temp_data;
         }
     }
 }

@@ -15,8 +15,11 @@ namespace HCI_Project
 {
     public partial class Form1 : Form
     {
+        Function f;
+        string route = null;
         public Form1()
         {
+            f = new Function();
             InitializeComponent();
         }
         Form2 child = new Form2();
@@ -46,14 +49,14 @@ namespace HCI_Project
         private void btnforlder_Click(object sender, EventArgs e)
         {
             openFileDialog.Filter = "텍스트파일|*.txt";
-            if (openFileDialog.ShowDialog()== DialogResult.OK)
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                StreamReader sr = new StreamReader(
-                    openFileDialog.FileName, Encoding.Default);
-                text.Text = sr.ReadToEnd();
-                sr.Close();
+                route = openFileDialog.FileName;
+                text.Text = f.open_File(openFileDialog.FileName);
+                f.change_Title(true, route);
             }
         }
+
         //파일저장
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -63,16 +66,9 @@ namespace HCI_Project
                 Function f = new Function();
                 if (f.save_File(text.Text, saveFileDialog.FileName))
                 {
-                    f.change_Title(saveFileDialog.FileName + " (저장됨)");
+                    route = saveFileDialog.FileName;
+                    f.change_Title(f.check_Content(route, text.Text), route);
                 }
-                /*StreamWriter sw = new StreamWriter(
-                    saveFileDialog.FileName, false, Encoding.Default);
-                MessageBox.Show("파일 저장 : " + saveFileDialog.FileName);
-
-         
-                sw.Write(text.Text);
-                sw.Close();
-                */
             }
         }
       
@@ -216,9 +212,17 @@ namespace HCI_Project
             panel5.Show();
         }
 
+        //삽입 탭.
         private void 보기VToolStripMenuItem_Click(object sender, EventArgs e)
         {
+        }
 
+        //텍스트 변경 시 타이틀 내용 변경.
+        private void text_TextChanged(object sender, EventArgs e)
+        {
+            string temp_data = ActiveForm.Text;
+            if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
+                f.change_Title(false, route);
         }
     }
 }
