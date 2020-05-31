@@ -224,5 +224,19 @@ namespace HCI_Project
             if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
                 f.change_Title(false, route);
         }
+
+        //새 파일 버튼 클릭
+        private void NewFile_Click(object sender, EventArgs e)
+        {
+            string temp_data = ActiveForm.Text;
+            if (temp_data.Contains("(저장 안 됨)"))
+            {
+                if (MessageBox.Show("이전 파일이 저장되지 않았습니다.\n새 파일을 계속 만드시겠습니까?", "경고", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+            }
+            route = null;
+            text.Text = "";
+            f.change_Title(false, route);
+        }
     }
 }

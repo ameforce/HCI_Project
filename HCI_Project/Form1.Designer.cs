@@ -36,7 +36,7 @@
             this.btnpaste = new System.Windows.Forms.Button();
             this.btnundo = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.NewFile = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.홈ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -197,18 +197,19 @@
             this.toolTip1.SetToolTip(this.button7, "표");
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // NewFile
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(151, 1);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(35, 35);
-            this.button8.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.button8, "새파일");
-            this.button8.UseVisualStyleBackColor = false;
+            this.NewFile.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NewFile.FlatAppearance.BorderSize = 0;
+            this.NewFile.Image = ((System.Drawing.Image)(resources.GetObject("NewFile.Image")));
+            this.NewFile.Location = new System.Drawing.Point(151, 1);
+            this.NewFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.NewFile.Name = "NewFile";
+            this.NewFile.Size = new System.Drawing.Size(35, 35);
+            this.NewFile.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.NewFile, "새파일");
+            this.NewFile.UseVisualStyleBackColor = false;
+            this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
             // menuStrip1
             // 
@@ -425,7 +426,7 @@
             this.panel1.Controls.Add(this.btnpaste);
             this.panel1.Controls.Add(this.btnundo);
             this.panel1.Controls.Add(this.btnOpen);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.NewFile);
             this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
@@ -439,7 +440,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 22);
             this.label11.TabIndex = 29;
-            this.label11.Text = "새파일";
+            this.label11.Text = "새 파일";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btncut
@@ -912,7 +913,7 @@
         private System.Windows.Forms.Button btnpaste;
         private System.Windows.Forms.Button btnundo;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button NewFile;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 편집ToolStripMenuItem;
