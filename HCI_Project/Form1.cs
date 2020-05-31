@@ -173,7 +173,6 @@ namespace HCI_Project
             panel2.Hide();
             panel3.Hide();
             panel4.Hide();
-            panel5.Hide();
             child2.Hide();
             child.Show();
         }
@@ -188,7 +187,6 @@ namespace HCI_Project
             panel2.Hide();
             panel3.Hide();
             panel4.Hide();
-            panel5.Hide();
             child.Hide();
             child2.Show();
 
@@ -209,13 +207,8 @@ namespace HCI_Project
             panel2.Show();
             panel3.Show();
             panel4.Show();
-            panel5.Show();
         }
 
-        //삽입 탭.
-        private void 보기VToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
 
         //텍스트 변경 시 타이틀 내용 변경.
         private void text_TextChanged(object sender, EventArgs e)
