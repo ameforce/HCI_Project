@@ -34,10 +34,10 @@ namespace HCI_Project
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Function f = new Function();
-                if (f.save_File(text.Text, saveFileDialog.FileName))
+                if (f.save_File(TextEdit.Text, saveFileDialog.FileName))
                 {
                     route = saveFileDialog.FileName;
-                    f.change_Title(f.check_Content(route, text.Text), route);
+                    f.change_Title(f.check_Content(route, TextEdit.Text), route);
                 }
             }
         }
@@ -45,20 +45,20 @@ namespace HCI_Project
         //붙여넣기
         private void BtnPaste_Click(object sender, EventArgs e)
         {
-            text.Paste();
+            TextEdit.Paste();
         }
 
         //오려두기
         private void BtnCut_Click(object sender, EventArgs e)
         {
             if (status == null) { } //쓰레기.
-            text.Cut();
+            TextEdit.Cut();
         }
 
         //복사하기
         private void BtnCopy_Click(object sender, EventArgs e)
         {
-            text.Copy();
+            TextEdit.Copy();
         }
 
         //새 파일 버튼 클릭
@@ -71,7 +71,7 @@ namespace HCI_Project
                     return;
             }
             route = null;
-            text.Text = "";
+            TextEdit.Text = "";
             f.change_Title(false, route);
         }
 
@@ -82,7 +82,7 @@ namespace HCI_Project
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 route = openFileDialog.FileName;
-                text.Text = f.open_File(openFileDialog.FileName);
+                TextEdit.Text = f.open_File(openFileDialog.FileName);
                 f.change_Title(true, route);
             }
         }
@@ -90,7 +90,7 @@ namespace HCI_Project
         //실행취소
         private void BtnUndo_Click(object sender, EventArgs e)
         {
-            text.Undo();
+            TextEdit.Undo();
         }
 
         //다시 실행
@@ -105,98 +105,119 @@ namespace HCI_Project
             DialogResult dr = this.fdFont.ShowDialog();
             if (dr == DialogResult.OK)
             {
-                text.Font = fdFont.Font;
+                TextEdit.Font = fdFont.Font;
             }
         }
 
         //글자 축소
         private void BtnReduction_Click(object sender, EventArgs e)
         {
-            text.SelectionFont = new Font(text.SelectionFont.FontFamily, text.SelectionFont.Size - 1,
-                text.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, TextEdit.SelectionFont.Size - 1,
+                TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
         }
 
         //글자 확대
         private void BtnEnlargement_Click(object sender, EventArgs e)
         {
-            text.SelectionFont = new Font(text.SelectionFont.FontFamily, text.SelectionFont.Size + 1,
-                text.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, TextEdit.SelectionFont.Size + 1,
+                TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
         }
 
         //굵게
         private void BtnBold_Click(object sender, EventArgs e)
         {
-            if (text.SelectionFont.Bold)
+            if (TextEdit.SelectionFont.Bold)
             {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Regular);
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
             }
             else
             {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Bold);
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Bold);
             }
         }
 
-        //폰트색상
-        private void btncolor_Click(object sender, EventArgs e)
+        //기울임
+        private void BtnItalic_Click(object sender, EventArgs e)
         {
-            if (fdcolor.ShowDialog() != DialogResult.Cancel)
+            if (TextEdit.SelectionFont.Italic)
             {
-                text.ForeColor = fdcolor.Color;
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
+            }
+            else
+            {
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Italic);
             }
         }
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
 
         //밑줄
-        private void button23_Click(object sender, EventArgs e)
+        private void BtnUnder_Click(object sender, EventArgs e)
         {
-            if (text.SelectionFont.Underline)
+            if (TextEdit.SelectionFont.Underline)
             {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Regular);
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
             }
             else
             {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Underline);
-            }
-        }
-        //기울임
-        private void button12_Click(object sender, EventArgs e)
-        {
-            if (text.SelectionFont.Italic)
-            {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Italic);
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Underline);
             }
         }
 
         //취소선
-        private void button16_Click(object sender, EventArgs e)
+        private void BtnStrikethrough_Click(object sender, EventArgs e)
         {
-            if (text.SelectionFont.Strikeout)
+            if (TextEdit.SelectionFont.Strikeout)
             {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Regular);
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
             }
             else
             {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Strikeout);
+                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Strikeout);
             }
         }
+
+        //폰트색상
+        private void BtnColor_Click(object sender, EventArgs e)
+        {
+            if (fdcolor.ShowDialog() != DialogResult.Cancel)
+            {
+                TextEdit.ForeColor = fdcolor.Color;
+            }
+        }
+
+        //찾기
+        private void BtnFind_Click(object sender, EventArgs e)
+        {
+            status = "Find";
+            Search.Focus();
+            Search.SelectAll();
+        }
+
+        //바꾸기
+        private void BtnFindAndChange_Click(object sender, EventArgs e)
+        {
+            status = "FindAndChange";
+            Search.Focus();
+            Search.SelectAll();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //################################################################
 
         private void Form1_Load(object sender, EventArgs e)
@@ -253,12 +274,11 @@ namespace HCI_Project
 
 
         //텍스트 변경 시 타이틀 내용 변경.
-        private void text_TextChanged(object sender, EventArgs e)
+        private void TextEdit_TextChanged(object sender, EventArgs e)
         {
             string temp_data = ActiveForm.Text;
             if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
                 f.change_Title(false, route);
         }
-
     }
 }

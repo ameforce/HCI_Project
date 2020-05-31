@@ -67,16 +67,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnSave = new System.Windows.Forms.Button();
-            this.btnItalic = new System.Windows.Forms.Button();
-            this.btncolor = new System.Windows.Forms.Button();
+            this.BtnItalic = new System.Windows.Forms.Button();
+            this.BtnColor = new System.Windows.Forms.Button();
             this.BtnReduction = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.button18 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.BtnStrikethrough = new System.Windows.Forms.Button();
             this.BtnBold = new System.Windows.Forms.Button();
-            this.btnunder = new System.Windows.Forms.Button();
+            this.BtnUnder = new System.Windows.Forms.Button();
             this.fdcolor = new System.Windows.Forms.ColorDialog();
             this.BtnFont = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -85,11 +85,11 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.search = new System.Windows.Forms.TextBox();
+            this.BtnFind = new System.Windows.Forms.Button();
+            this.BtnFindAndChange = new System.Windows.Forms.Button();
+            this.Search = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.text = new System.Windows.Forms.RichTextBox();
+            this.TextEdit = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -476,33 +476,33 @@
             this.BtnSave.UseVisualStyleBackColor = false;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // btnItalic
+            // BtnItalic
             // 
-            this.btnItalic.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnItalic.FlatAppearance.BorderSize = 0;
-            this.btnItalic.Image = ((System.Drawing.Image)(resources.GetObject("btnItalic.Image")));
-            this.btnItalic.Location = new System.Drawing.Point(39, 44);
-            this.btnItalic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnItalic.Name = "btnItalic";
-            this.btnItalic.Size = new System.Drawing.Size(29, 31);
-            this.btnItalic.TabIndex = 16;
-            this.toolTip1.SetToolTip(this.btnItalic, "글자 기울게");
-            this.btnItalic.UseVisualStyleBackColor = false;
-            this.btnItalic.Click += new System.EventHandler(this.button12_Click);
+            this.BtnItalic.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnItalic.FlatAppearance.BorderSize = 0;
+            this.BtnItalic.Image = ((System.Drawing.Image)(resources.GetObject("BtnItalic.Image")));
+            this.BtnItalic.Location = new System.Drawing.Point(39, 44);
+            this.BtnItalic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnItalic.Name = "BtnItalic";
+            this.BtnItalic.Size = new System.Drawing.Size(29, 31);
+            this.BtnItalic.TabIndex = 16;
+            this.toolTip1.SetToolTip(this.BtnItalic, "글자 기울게");
+            this.BtnItalic.UseVisualStyleBackColor = false;
+            this.BtnItalic.Click += new System.EventHandler(this.BtnItalic_Click);
             // 
-            // btncolor
+            // BtnColor
             // 
-            this.btncolor.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btncolor.FlatAppearance.BorderSize = 0;
-            this.btncolor.Image = ((System.Drawing.Image)(resources.GetObject("btncolor.Image")));
-            this.btncolor.Location = new System.Drawing.Point(145, 44);
-            this.btncolor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btncolor.Name = "btncolor";
-            this.btncolor.Size = new System.Drawing.Size(29, 31);
-            this.btncolor.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.btncolor, "글자 색");
-            this.btncolor.UseVisualStyleBackColor = false;
-            this.btncolor.Click += new System.EventHandler(this.btncolor_Click);
+            this.BtnColor.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnColor.FlatAppearance.BorderSize = 0;
+            this.BtnColor.Image = ((System.Drawing.Image)(resources.GetObject("BtnColor.Image")));
+            this.BtnColor.Location = new System.Drawing.Point(145, 44);
+            this.BtnColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnColor.Name = "BtnColor";
+            this.BtnColor.Size = new System.Drawing.Size(29, 31);
+            this.BtnColor.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.BtnColor, "글자 색");
+            this.BtnColor.UseVisualStyleBackColor = false;
+            this.BtnColor.Click += new System.EventHandler(this.BtnColor_Click);
             // 
             // BtnReduction
             // 
@@ -566,19 +566,19 @@
             this.button17.TabIndex = 18;
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // BtnStrikethrough
             // 
-            this.button16.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(110, 44);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(29, 31);
-            this.button16.TabIndex = 17;
-            this.toolTip1.SetToolTip(this.button16, "글자 취소선");
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.BtnStrikethrough.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnStrikethrough.FlatAppearance.BorderSize = 0;
+            this.BtnStrikethrough.Image = ((System.Drawing.Image)(resources.GetObject("BtnStrikethrough.Image")));
+            this.BtnStrikethrough.Location = new System.Drawing.Point(110, 44);
+            this.BtnStrikethrough.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnStrikethrough.Name = "BtnStrikethrough";
+            this.BtnStrikethrough.Size = new System.Drawing.Size(29, 31);
+            this.BtnStrikethrough.TabIndex = 17;
+            this.toolTip1.SetToolTip(this.BtnStrikethrough, "글자 취소선");
+            this.BtnStrikethrough.UseVisualStyleBackColor = false;
+            this.BtnStrikethrough.Click += new System.EventHandler(this.BtnStrikethrough_Click);
             // 
             // BtnBold
             // 
@@ -594,19 +594,19 @@
             this.BtnBold.UseVisualStyleBackColor = false;
             this.BtnBold.Click += new System.EventHandler(this.BtnBold_Click);
             // 
-            // btnunder
+            // BtnUnder
             // 
-            this.btnunder.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnunder.FlatAppearance.BorderSize = 0;
-            this.btnunder.Image = ((System.Drawing.Image)(resources.GetObject("btnunder.Image")));
-            this.btnunder.Location = new System.Drawing.Point(74, 45);
-            this.btnunder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnunder.Name = "btnunder";
-            this.btnunder.Size = new System.Drawing.Size(29, 31);
-            this.btnunder.TabIndex = 24;
-            this.toolTip1.SetToolTip(this.btnunder, "글자 밑줄");
-            this.btnunder.UseVisualStyleBackColor = false;
-            this.btnunder.Click += new System.EventHandler(this.button23_Click);
+            this.BtnUnder.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnUnder.FlatAppearance.BorderSize = 0;
+            this.BtnUnder.Image = ((System.Drawing.Image)(resources.GetObject("BtnUnder.Image")));
+            this.BtnUnder.Location = new System.Drawing.Point(74, 45);
+            this.BtnUnder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnUnder.Name = "BtnUnder";
+            this.BtnUnder.Size = new System.Drawing.Size(29, 31);
+            this.BtnUnder.TabIndex = 24;
+            this.toolTip1.SetToolTip(this.BtnUnder, "글자 밑줄");
+            this.BtnUnder.UseVisualStyleBackColor = false;
+            this.BtnUnder.Click += new System.EventHandler(this.BtnUnder_Click);
             // 
             // BtnFont
             // 
@@ -628,11 +628,11 @@
             this.panel2.BackColor = System.Drawing.Color.LightCyan;
             this.panel2.Controls.Add(this.BtnEnlargement);
             this.panel2.Controls.Add(this.BtnReduction);
-            this.panel2.Controls.Add(this.btncolor);
-            this.panel2.Controls.Add(this.btnItalic);
-            this.panel2.Controls.Add(this.button16);
+            this.panel2.Controls.Add(this.BtnColor);
+            this.panel2.Controls.Add(this.BtnItalic);
+            this.panel2.Controls.Add(this.BtnStrikethrough);
             this.panel2.Controls.Add(this.BtnFont);
-            this.panel2.Controls.Add(this.btnunder);
+            this.panel2.Controls.Add(this.BtnUnder);
             this.panel2.Controls.Add(this.BtnBold);
             this.panel2.Location = new System.Drawing.Point(270, 32);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -658,41 +658,43 @@
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
-            // button3
+            // BtnFind
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(12, 4);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(47, 46);
-            this.button3.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.button3, "불러오기");
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnFind.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnFind.FlatAppearance.BorderSize = 0;
+            this.BtnFind.Image = ((System.Drawing.Image)(resources.GetObject("BtnFind.Image")));
+            this.BtnFind.Location = new System.Drawing.Point(12, 4);
+            this.BtnFind.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFind.Name = "BtnFind";
+            this.BtnFind.Size = new System.Drawing.Size(47, 46);
+            this.BtnFind.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.BtnFind, "불러오기");
+            this.BtnFind.UseVisualStyleBackColor = false;
+            this.BtnFind.Click += new System.EventHandler(this.BtnFind_Click);
             // 
-            // button4
+            // BtnFindAndChange
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(13, 58);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(46, 45);
-            this.button4.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.button4, "불러오기");
-            this.button4.UseVisualStyleBackColor = false;
+            this.BtnFindAndChange.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnFindAndChange.FlatAppearance.BorderSize = 0;
+            this.BtnFindAndChange.Image = ((System.Drawing.Image)(resources.GetObject("BtnFindAndChange.Image")));
+            this.BtnFindAndChange.Location = new System.Drawing.Point(13, 58);
+            this.BtnFindAndChange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFindAndChange.Name = "BtnFindAndChange";
+            this.BtnFindAndChange.Size = new System.Drawing.Size(46, 45);
+            this.BtnFindAndChange.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.BtnFindAndChange, "불러오기");
+            this.BtnFindAndChange.UseVisualStyleBackColor = false;
+            this.BtnFindAndChange.Click += new System.EventHandler(this.BtnFindAndChange_Click);
             // 
-            // search
+            // Search
             // 
-            this.search.Location = new System.Drawing.Point(609, 2);
-            this.search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.search.Multiline = true;
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(167, 24);
-            this.search.TabIndex = 25;
-            this.search.Text = "검색";
+            this.Search.Location = new System.Drawing.Point(609, 2);
+            this.Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Search.Multiline = true;
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(167, 24);
+            this.Search.TabIndex = 25;
+            this.Search.Text = "검색";
             // 
             // contextMenuStrip1
             // 
@@ -700,25 +702,25 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // text
+            // TextEdit
             // 
-            this.text.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.text.Location = new System.Drawing.Point(0, 201);
-            this.text.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.text.Name = "text";
-            this.text.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
-            this.text.Size = new System.Drawing.Size(914, 499);
-            this.text.TabIndex = 26;
-            this.text.Text = "";
-            this.text.TextChanged += new System.EventHandler(this.text_TextChanged);
+            this.TextEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TextEdit.Location = new System.Drawing.Point(0, 201);
+            this.TextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextEdit.Name = "TextEdit";
+            this.TextEdit.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
+            this.TextEdit.Size = new System.Drawing.Size(914, 499);
+            this.TextEdit.TabIndex = 26;
+            this.TextEdit.Text = "";
+            this.TextEdit.TextChanged += new System.EventHandler(this.TextEdit_TextChanged);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.BtnFindAndChange);
+            this.panel3.Controls.Add(this.BtnFind);
             this.panel3.Location = new System.Drawing.Point(466, 32);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
@@ -757,9 +759,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(911, 714);
-            this.Controls.Add(this.text);
+            this.Controls.Add(this.TextEdit);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.search);
+            this.Controls.Add(this.Search);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -813,16 +815,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnItalic;
-        private System.Windows.Forms.Button btncolor;
+        private System.Windows.Forms.Button BtnItalic;
+        private System.Windows.Forms.Button BtnColor;
         private System.Windows.Forms.Button BtnReduction;
         private System.Windows.Forms.FlowLayoutPanel panel4;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button BtnStrikethrough;
         private System.Windows.Forms.Button BtnBold;
-        private System.Windows.Forms.Button btnunder;
+        private System.Windows.Forms.Button BtnUnder;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnCopy;
@@ -836,11 +838,11 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TextBox search;
+        private System.Windows.Forms.TextBox Search;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.BindingSource bindingSource2;
-        private System.Windows.Forms.RichTextBox text;
+        private System.Windows.Forms.RichTextBox TextEdit;
         private System.Windows.Forms.Button BtnEnlargement;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -849,8 +851,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnFindAndChange;
+        private System.Windows.Forms.Button BtnFind;
         private System.Windows.Forms.ToolStripMenuItem 홈ToolStripMenuItem;
     }
 }
