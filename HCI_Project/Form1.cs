@@ -10,13 +10,13 @@ using System.IO;
 using System.Windows.Forms;
 
 
-
 namespace HCI_Project
 {
     public partial class Form1 : Form
     {
-        Function f;
-        string route = null;
+        private Function f;
+        private string route = null;
+        private string status = null;
         public Form1()
         {
             f = new Function();
