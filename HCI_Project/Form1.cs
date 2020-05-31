@@ -15,12 +15,12 @@ namespace HCI_Project
 {
     public partial class Form1 : Form
     {
-        private Function f;
+        private Function f = new Function();
         private string route = null;
         private string status = null;
         public Form1()
         {
-            f = new Function();
+            Search.ReadOnly = false;
             InitializeComponent();
         }
         Form2 child = new Form2();
@@ -199,32 +199,9 @@ namespace HCI_Project
             Search.Focus();
             Search.SelectAll();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //################################################################
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Form2 child =new Form2();
-        }
-
+        //
         private void 컨트롤CToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -239,6 +216,7 @@ namespace HCI_Project
             child2.Hide();
             child.Show();
         }
+
         //편집기능 메뉴바
         private void 편집ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -252,16 +230,15 @@ namespace HCI_Project
             panel4.Hide();
             child.Hide();
             child2.Show();
-
-
-
         }
+
         //서식기능 메뉴바
         private void ToolStripMenuItem_Click(object sender, EventArgs e)
         {
         
         }
 
+        //
         private void 홈ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             child2.Hide();
@@ -272,13 +249,24 @@ namespace HCI_Project
             panel4.Show();
         }
 
-
-        //텍스트 변경 시 타이틀 내용 변경.
+        //TextEdit 내용 변경 시 타이틀 내용 변경.
         private void TextEdit_TextChanged(object sender, EventArgs e)
         {
             string temp_data = ActiveForm.Text;
             if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
                 f.change_Title(false, route);
+        }
+
+        //Search 내용 변경 시 status에 따라 찾기 및 바꾸기 수행.
+        private void Search_TextChanged(object sender, EventArgs e)
+        {
+            if (status == "Find")
+            {
+
+            }else if (status == "FindAndChange")
+            {
+
+            }
         }
     }
 }

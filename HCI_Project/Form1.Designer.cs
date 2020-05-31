@@ -96,6 +96,7 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.SearchStatus = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -198,7 +199,7 @@
             // 
             this.홈ToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.홈ToolStripMenuItem.Name = "홈ToolStripMenuItem";
-            this.홈ToolStripMenuItem.Size = new System.Drawing.Size(62, 26);
+            this.홈ToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.홈ToolStripMenuItem.Text = "  홈    I";
             this.홈ToolStripMenuItem.Click += new System.EventHandler(this.홈ToolStripMenuItem_Click);
             // 
@@ -213,7 +214,7 @@
             this.ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             this.ToolStripMenuItem.Text = "파일(&F)";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
@@ -255,7 +256,7 @@
             this.찾기ToolStripMenuItem,
             this.다음찾기ToolStripMenuItem});
             this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
-            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             this.편집ToolStripMenuItem.Click += new System.EventHandler(this.편집ToolStripMenuItem_Click);
             // 
@@ -313,7 +314,7 @@
             this.컨트롤CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1});
             this.컨트롤CToolStripMenuItem.Name = "컨트롤CToolStripMenuItem";
-            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
+            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(70, 22);
             this.컨트롤CToolStripMenuItem.Text = "서식(&O)";
             this.컨트롤CToolStripMenuItem.Click += new System.EventHandler(this.컨트롤CToolStripMenuItem_Click);
             // 
@@ -326,7 +327,7 @@
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
             this.도움말ToolStripMenuItem.Text = "도움말(&H)";
             // 
             // panel1
@@ -695,6 +696,7 @@
             this.Search.Size = new System.Drawing.Size(167, 24);
             this.Search.TabIndex = 25;
             this.Search.Text = "검색";
+            this.Search.TextChanged += new System.EventHandler(this.Search_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -753,12 +755,22 @@
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
+            // SearchStatus
+            // 
+            this.SearchStatus.AutoSize = true;
+            this.SearchStatus.Location = new System.Drawing.Point(783, 7);
+            this.SearchStatus.Name = "SearchStatus";
+            this.SearchStatus.Size = new System.Drawing.Size(73, 15);
+            this.SearchStatus.TabIndex = 31;
+            this.SearchStatus.Text = "| No_data";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(911, 714);
+            this.Controls.Add(this.SearchStatus);
             this.Controls.Add(this.TextEdit);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.Search);
@@ -772,7 +784,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "TEXT EDITOR";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -854,6 +865,7 @@
         private System.Windows.Forms.Button BtnFindAndChange;
         private System.Windows.Forms.Button BtnFind;
         private System.Windows.Forms.ToolStripMenuItem 홈ToolStripMenuItem;
+        private System.Windows.Forms.Label SearchStatus;
     }
 }
 
