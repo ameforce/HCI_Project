@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
-            this.btnpaste = new System.Windows.Forms.Button();
+            this.BtnPaste = new System.Windows.Forms.Button();
             this.btnundo = new System.Windows.Forms.Button();
             this.NewFile = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -66,7 +66,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
             this.btnItalic = new System.Windows.Forms.Button();
             this.btncolor = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -132,19 +132,19 @@
             this.btnOpen.UseVisualStyleBackColor = false;
             this.btnOpen.Click += new System.EventHandler(this.btnforlder_Click);
             // 
-            // btnpaste
+            // BtnPaste
             // 
-            this.btnpaste.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnpaste.FlatAppearance.BorderSize = 0;
-            this.btnpaste.Image = ((System.Drawing.Image)(resources.GetObject("btnpaste.Image")));
-            this.btnpaste.Location = new System.Drawing.Point(75, 0);
-            this.btnpaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnpaste.Name = "btnpaste";
-            this.btnpaste.Size = new System.Drawing.Size(69, 62);
-            this.btnpaste.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.btnpaste, "붙여넣기");
-            this.btnpaste.UseVisualStyleBackColor = false;
-            this.btnpaste.Click += new System.EventHandler(this.btnpaste_Click);
+            this.BtnPaste.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnPaste.FlatAppearance.BorderSize = 0;
+            this.BtnPaste.Image = ((System.Drawing.Image)(resources.GetObject("BtnPaste.Image")));
+            this.BtnPaste.Location = new System.Drawing.Point(75, 0);
+            this.BtnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnPaste.Name = "BtnPaste";
+            this.BtnPaste.Size = new System.Drawing.Size(69, 62);
+            this.BtnPaste.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.BtnPaste, "붙여넣기");
+            this.BtnPaste.UseVisualStyleBackColor = false;
+            this.BtnPaste.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
             // btnundo
             // 
@@ -188,7 +188,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(911, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(911, 26);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -318,7 +318,7 @@
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 28);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 31);
             this.toolStripComboBox1.Text = "글꼴";
             // 
             // 도움말ToolStripMenuItem
@@ -341,8 +341,8 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnSave);
-            this.panel1.Controls.Add(this.btnpaste);
+            this.panel1.Controls.Add(this.BtnSave);
+            this.panel1.Controls.Add(this.BtnPaste);
             this.panel1.Controls.Add(this.btnundo);
             this.panel1.Controls.Add(this.btnOpen);
             this.panel1.Controls.Add(this.NewFile);
@@ -460,19 +460,19 @@
             this.label1.Text = "파일저장";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnSave
+            // BtnSave
             // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(6, 0);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(69, 62);
-            this.btnSave.TabIndex = 1;
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.toolTip1.SetToolTip(this.btnSave, "파일저장");
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.BtnSave.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.Image")));
+            this.BtnSave.Location = new System.Drawing.Point(6, 0);
+            this.BtnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(69, 62);
+            this.BtnSave.TabIndex = 1;
+            this.BtnSave.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.toolTip1.SetToolTip(this.BtnSave, "파일저장");
+            this.BtnSave.UseVisualStyleBackColor = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // btnItalic
             // 
@@ -781,7 +781,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnOpen;
-        private System.Windows.Forms.Button btnpaste;
+        private System.Windows.Forms.Button BtnPaste;
         private System.Windows.Forms.Button btnundo;
         private System.Windows.Forms.Button NewFile;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -800,7 +800,7 @@
         private System.Windows.Forms.ToolStripMenuItem 저장ToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

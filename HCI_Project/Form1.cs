@@ -58,7 +58,7 @@ namespace HCI_Project
         }
 
         //파일저장
-        private void btnSave_Click(object sender, EventArgs e)
+        private void BtnSave_Click(object sender, EventArgs e)
         {
             saveFileDialog.Filter = "텍스트파일|*.txt";
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -87,11 +87,13 @@ namespace HCI_Project
         {
             text.Copy();
         }
+
         //붙여넣기
-        private void btnpaste_Click(object sender, EventArgs e)
+        private void BtnPaste_Click(object sender, EventArgs e)
         {
             text.Paste();
         }
+
         //굵게
         private void button21_Click(object sender, EventArgs e)
         {
@@ -231,5 +233,6 @@ namespace HCI_Project
             text.Text = "";
             f.change_Title(false, route);
         }
+
     }
 }
