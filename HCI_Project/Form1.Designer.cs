@@ -234,7 +234,7 @@
             this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.저장ToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.저장ToolStripMenuItem.Text = "저장";
-            this.저장ToolStripMenuItem.Click += new System.EventHandler(this.btnSave_Click);
+            this.저장ToolStripMenuItem.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // 다른이름으로저ToolStripMenuItem
             // 
@@ -399,7 +399,7 @@
             this.BtnCopy.TabIndex = 26;
             this.toolTip1.SetToolTip(this.BtnCopy, "복사하기");
             this.BtnCopy.UseVisualStyleBackColor = false;
-            this.BtnCopy.Click += new System.EventHandler(this.btncopy_Click);
+            this.BtnCopy.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
             // label6
             // 

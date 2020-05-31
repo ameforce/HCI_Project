@@ -41,6 +41,24 @@ namespace HCI_Project
             }
         }
 
+        //붙여넣기
+        private void BtnPaste_Click(object sender, EventArgs e)
+        {
+            text.Paste();
+        }
+
+        //오려두기
+        private void BtnCut_Click(object sender, EventArgs e)
+        {
+            text.Cut();
+        }
+
+        //복사하기
+        private void BtnCopy_Click(object sender, EventArgs e)
+        {
+            text.Copy();
+        }
+
         //새 파일 버튼 클릭
         private void BtnNewFile_Click(object sender, EventArgs e)
         {
@@ -54,6 +72,8 @@ namespace HCI_Project
             text.Text = "";
             f.change_Title(false, route);
         }
+
+
 
         //폰트색상
         private void btncolor_Click(object sender, EventArgs e)
@@ -89,27 +109,15 @@ namespace HCI_Project
 
 
       
-        //잘라내기
-        private void BtnCut_Click(object sender, EventArgs e)
-        {
-            text.Cut();
-        }
+
         //실행취소
         private void btnundo_Click(object sender, EventArgs e)
         {
             text.Undo();
         }
-        //복사하기
-        private void btncopy_Click(object sender, EventArgs e)
-        {
-            text.Copy();
-        }
 
-        //붙여넣기
-        private void BtnPaste_Click(object sender, EventArgs e)
-        {
-            text.Paste();
-        }
+
+
 
         //굵게
         private void button21_Click(object sender, EventArgs e)
@@ -245,5 +253,6 @@ namespace HCI_Project
         {
 
         }
+
     }
 }
