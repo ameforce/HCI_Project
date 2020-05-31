@@ -1,4 +1,5 @@
-﻿using System;
+﻿#pragma warning disable IDE0044 // 읽기 전용 한정자 추가
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,7 @@ namespace HCI_Project
         //오려두기
         private void BtnCut_Click(object sender, EventArgs e)
         {
+            if (status == null) { } //쓰레기.
             text.Cut();
         }
 
@@ -97,6 +99,42 @@ namespace HCI_Project
 
         }
 
+        //폰트
+        private void BtnFont_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = this.fdFont.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                text.Font = fdFont.Font;
+            }
+        }
+
+        //글자 축소
+        private void BtnReduction_Click(object sender, EventArgs e)
+        {
+            text.SelectionFont = new Font(text.SelectionFont.FontFamily, text.SelectionFont.Size - 1,
+                text.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+        }
+
+        //글자 확대
+        private void BtnEnlargement_Click(object sender, EventArgs e)
+        {
+            text.SelectionFont = new Font(text.SelectionFont.FontFamily, text.SelectionFont.Size + 1,
+                text.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+        }
+
+        //굵게
+        private void BtnBold_Click(object sender, EventArgs e)
+        {
+            if (text.SelectionFont.Bold)
+            {
+                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Regular);
+            }
+            else
+            {
+                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Bold);
+            }
+        }
 
         //폰트색상
         private void btncolor_Click(object sender, EventArgs e)
@@ -106,15 +144,7 @@ namespace HCI_Project
                 text.ForeColor = fdcolor.Color;
             }
         }
-        //폰트
-        private void btnFont_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = this.fdFont.ShowDialog();
-            if (dr == DialogResult.OK)
-            {
-                text.Font = fdFont.Font;
-            }
-        }
+
 
 
 
@@ -128,18 +158,7 @@ namespace HCI_Project
 
 
 
-        //굵게
-        private void button21_Click(object sender, EventArgs e)
-        {
-          if(text.SelectionFont.Bold)
-            {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                text.SelectionFont = new Font(text.SelectionFont, FontStyle.Bold);
-            }
-        }
+
 
         //밑줄
         private void button23_Click(object sender, EventArgs e)
@@ -166,21 +185,6 @@ namespace HCI_Project
             }
         }
 
-        //글자 크기
-        private void button10_Click(object sender, EventArgs e)
-        {
-            text.SelectionFont = new Font(text.SelectionFont.FontFamily, text.SelectionFont.Size - 1,
-                text.SelectionFont.Bold? FontStyle.Bold:FontStyle.Regular );
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            text.SelectionFont = new Font(text.SelectionFont.FontFamily, text.SelectionFont.Size + 1,
-                text.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
-            
-          
-
-        }
         //취소선
         private void button16_Click(object sender, EventArgs e)
         {
@@ -255,5 +259,6 @@ namespace HCI_Project
             if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
                 f.change_Title(false, route);
         }
+
     }
 }
