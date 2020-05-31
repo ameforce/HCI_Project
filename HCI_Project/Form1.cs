@@ -25,6 +25,36 @@ namespace HCI_Project
         Form2 child = new Form2();
         Form3 child2 = new Form3();
 
+        //#######################Button Function############################
+        //파일저장
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            saveFileDialog.Filter = "텍스트파일|*.txt";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Function f = new Function();
+                if (f.save_File(text.Text, saveFileDialog.FileName))
+                {
+                    route = saveFileDialog.FileName;
+                    f.change_Title(f.check_Content(route, text.Text), route);
+                }
+            }
+        }
+
+        //새 파일 버튼 클릭
+        private void BtnNewFile_Click(object sender, EventArgs e)
+        {
+            string temp_data = ActiveForm.Text;
+            if (temp_data.Contains("(저장 안 됨)"))
+            {
+                if (MessageBox.Show("이전 파일이 저장되지 않았습니다.\n새 파일을 계속 만드시겠습니까?", "경고", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+            }
+            route = null;
+            text.Text = "";
+            f.change_Title(false, route);
+        }
+
         //폰트색상
         private void btncolor_Click(object sender, EventArgs e)
         {
@@ -46,7 +76,7 @@ namespace HCI_Project
 
 
         //파일열기
-        private void btnforlder_Click(object sender, EventArgs e)
+        private void BtnOpen_Click(object sender, EventArgs e)
         {
             openFileDialog.Filter = "텍스트파일|*.txt";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -57,23 +87,10 @@ namespace HCI_Project
             }
         }
 
-        //파일저장
-        private void BtnSave_Click(object sender, EventArgs e)
-        {
-            saveFileDialog.Filter = "텍스트파일|*.txt";
-            if(saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                Function f = new Function();
-                if (f.save_File(text.Text, saveFileDialog.FileName))
-                {
-                    route = saveFileDialog.FileName;
-                    f.change_Title(f.check_Content(route, text.Text), route);
-                }
-            }
-        }
+
       
         //잘라내기
-        private void btncut_Click(object sender, EventArgs e)
+        private void BtnCut_Click(object sender, EventArgs e)
         {
             text.Cut();
         }
@@ -106,6 +123,7 @@ namespace HCI_Project
                 text.SelectionFont = new Font(text.SelectionFont, FontStyle.Bold);
             }
         }
+
         //밑줄
         private void button23_Click(object sender, EventArgs e)
         {
@@ -158,6 +176,7 @@ namespace HCI_Project
                 text.SelectionFont = new Font(text.SelectionFont, FontStyle.Strikeout);
             }
         }
+        //################################################################
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -220,19 +239,11 @@ namespace HCI_Project
                 f.change_Title(false, route);
         }
 
-        //새 파일 버튼 클릭
-        private void NewFile_Click(object sender, EventArgs e)
-        {
-            string temp_data = ActiveForm.Text;
-            if (temp_data.Contains("(저장 안 됨)"))
-            {
-                if (MessageBox.Show("이전 파일이 저장되지 않았습니다.\n새 파일을 계속 만드시겠습니까?", "경고", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                    return;
-            }
-            route = null;
-            text.Text = "";
-            f.change_Title(false, route);
-        }
 
+
+        private void BtnRerun_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

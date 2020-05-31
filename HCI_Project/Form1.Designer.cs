@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnOpen = new System.Windows.Forms.Button();
+            this.BtnRerun = new System.Windows.Forms.Button();
+            this.BtnOpen = new System.Windows.Forms.Button();
             this.BtnPaste = new System.Windows.Forms.Button();
-            this.btnundo = new System.Windows.Forms.Button();
-            this.NewFile = new System.Windows.Forms.Button();
+            this.BtnUndo = new System.Windows.Forms.Button();
+            this.BtnNewFile = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.홈ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,9 +57,9 @@
             this.fdFont = new System.Windows.Forms.FontDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.btncut = new System.Windows.Forms.Button();
+            this.BtnCut = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.btncopy = new System.Windows.Forms.Button();
+            this.BtnCopy = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -105,32 +105,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnRerun
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(151, 128);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 39);
-            this.button1.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.button1, "다시실행");
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnRerun.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnRerun.FlatAppearance.BorderSize = 0;
+            this.BtnRerun.Image = ((System.Drawing.Image)(resources.GetObject("BtnRerun.Image")));
+            this.BtnRerun.Location = new System.Drawing.Point(151, 128);
+            this.BtnRerun.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnRerun.Name = "BtnRerun";
+            this.BtnRerun.Size = new System.Drawing.Size(35, 39);
+            this.BtnRerun.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.BtnRerun, "다시실행");
+            this.BtnRerun.UseVisualStyleBackColor = false;
+            this.BtnRerun.Click += new System.EventHandler(this.BtnRerun_Click);
             // 
-            // btnOpen
+            // BtnOpen
             // 
-            this.btnOpen.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOpen.FlatAppearance.BorderSize = 0;
-            this.btnOpen.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen.Image")));
-            this.btnOpen.Location = new System.Drawing.Point(151, 42);
-            this.btnOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(35, 39);
-            this.btnOpen.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.btnOpen, "불러오기");
-            this.btnOpen.UseVisualStyleBackColor = false;
-            this.btnOpen.Click += new System.EventHandler(this.btnforlder_Click);
+            this.BtnOpen.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnOpen.FlatAppearance.BorderSize = 0;
+            this.BtnOpen.Image = ((System.Drawing.Image)(resources.GetObject("BtnOpen.Image")));
+            this.BtnOpen.Location = new System.Drawing.Point(151, 42);
+            this.BtnOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnOpen.Name = "BtnOpen";
+            this.BtnOpen.Size = new System.Drawing.Size(35, 39);
+            this.BtnOpen.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.BtnOpen, "불러오기");
+            this.BtnOpen.UseVisualStyleBackColor = false;
+            this.BtnOpen.Click += new System.EventHandler(this.BtnOpen_Click);
             // 
             // BtnPaste
             // 
@@ -146,32 +147,32 @@
             this.BtnPaste.UseVisualStyleBackColor = false;
             this.BtnPaste.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
-            // btnundo
+            // BtnUndo
             // 
-            this.btnundo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnundo.FlatAppearance.BorderSize = 0;
-            this.btnundo.Image = ((System.Drawing.Image)(resources.GetObject("btnundo.Image")));
-            this.btnundo.Location = new System.Drawing.Point(151, 85);
-            this.btnundo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnundo.Name = "btnundo";
-            this.btnundo.Size = new System.Drawing.Size(35, 39);
-            this.btnundo.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.btnundo, "실행취소");
-            this.btnundo.UseVisualStyleBackColor = false;
+            this.BtnUndo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnUndo.FlatAppearance.BorderSize = 0;
+            this.BtnUndo.Image = ((System.Drawing.Image)(resources.GetObject("BtnUndo.Image")));
+            this.BtnUndo.Location = new System.Drawing.Point(151, 85);
+            this.BtnUndo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnUndo.Name = "BtnUndo";
+            this.BtnUndo.Size = new System.Drawing.Size(35, 39);
+            this.BtnUndo.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.BtnUndo, "실행취소");
+            this.BtnUndo.UseVisualStyleBackColor = false;
             // 
-            // NewFile
+            // BtnNewFile
             // 
-            this.NewFile.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NewFile.FlatAppearance.BorderSize = 0;
-            this.NewFile.Image = ((System.Drawing.Image)(resources.GetObject("NewFile.Image")));
-            this.NewFile.Location = new System.Drawing.Point(151, 1);
-            this.NewFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NewFile.Name = "NewFile";
-            this.NewFile.Size = new System.Drawing.Size(35, 35);
-            this.NewFile.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.NewFile, "새파일");
-            this.NewFile.UseVisualStyleBackColor = false;
-            this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
+            this.BtnNewFile.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnNewFile.FlatAppearance.BorderSize = 0;
+            this.BtnNewFile.Image = ((System.Drawing.Image)(resources.GetObject("BtnNewFile.Image")));
+            this.BtnNewFile.Location = new System.Drawing.Point(151, 1);
+            this.BtnNewFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnNewFile.Name = "BtnNewFile";
+            this.BtnNewFile.Size = new System.Drawing.Size(35, 35);
+            this.BtnNewFile.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.BtnNewFile, "새파일");
+            this.BtnNewFile.UseVisualStyleBackColor = false;
+            this.BtnNewFile.Click += new System.EventHandler(this.BtnNewFile_Click);
             // 
             // menuStrip1
             // 
@@ -188,7 +189,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(911, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(911, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -331,21 +332,21 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.btncut);
+            this.panel1.Controls.Add(this.BtnCut);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.btncopy);
+            this.panel1.Controls.Add(this.BtnCopy);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtnRerun);
             this.panel1.Controls.Add(this.BtnSave);
             this.panel1.Controls.Add(this.BtnPaste);
-            this.panel1.Controls.Add(this.btnundo);
-            this.panel1.Controls.Add(this.btnOpen);
-            this.panel1.Controls.Add(this.NewFile);
+            this.panel1.Controls.Add(this.BtnUndo);
+            this.panel1.Controls.Add(this.BtnOpen);
+            this.panel1.Controls.Add(this.BtnNewFile);
             this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
@@ -362,19 +363,19 @@
             this.label11.Text = "새 파일";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btncut
+            // BtnCut
             // 
-            this.btncut.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btncut.FlatAppearance.BorderSize = 0;
-            this.btncut.Image = ((System.Drawing.Image)(resources.GetObject("btncut.Image")));
-            this.btncut.Location = new System.Drawing.Point(6, 85);
-            this.btncut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btncut.Name = "btncut";
-            this.btncut.Size = new System.Drawing.Size(69, 62);
-            this.btncut.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.btncut, "오려두기");
-            this.btncut.UseVisualStyleBackColor = false;
-            this.btncut.Click += new System.EventHandler(this.btncut_Click);
+            this.BtnCut.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnCut.FlatAppearance.BorderSize = 0;
+            this.BtnCut.Image = ((System.Drawing.Image)(resources.GetObject("BtnCut.Image")));
+            this.BtnCut.Location = new System.Drawing.Point(6, 85);
+            this.BtnCut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCut.Name = "BtnCut";
+            this.BtnCut.Size = new System.Drawing.Size(69, 62);
+            this.BtnCut.TabIndex = 28;
+            this.toolTip1.SetToolTip(this.BtnCut, "오려두기");
+            this.BtnCut.UseVisualStyleBackColor = false;
+            this.BtnCut.Click += new System.EventHandler(this.BtnCut_Click);
             // 
             // label10
             // 
@@ -386,19 +387,19 @@
             this.label10.Text = "오려두기";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btncopy
+            // BtnCopy
             // 
-            this.btncopy.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btncopy.FlatAppearance.BorderSize = 0;
-            this.btncopy.Image = ((System.Drawing.Image)(resources.GetObject("btncopy.Image")));
-            this.btncopy.Location = new System.Drawing.Point(75, 85);
-            this.btncopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btncopy.Name = "btncopy";
-            this.btncopy.Size = new System.Drawing.Size(69, 62);
-            this.btncopy.TabIndex = 26;
-            this.toolTip1.SetToolTip(this.btncopy, "복사하기");
-            this.btncopy.UseVisualStyleBackColor = false;
-            this.btncopy.Click += new System.EventHandler(this.btncopy_Click);
+            this.BtnCopy.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnCopy.FlatAppearance.BorderSize = 0;
+            this.BtnCopy.Image = ((System.Drawing.Image)(resources.GetObject("BtnCopy.Image")));
+            this.BtnCopy.Location = new System.Drawing.Point(75, 85);
+            this.BtnCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCopy.Name = "BtnCopy";
+            this.BtnCopy.Size = new System.Drawing.Size(69, 62);
+            this.BtnCopy.TabIndex = 26;
+            this.toolTip1.SetToolTip(this.BtnCopy, "복사하기");
+            this.BtnCopy.UseVisualStyleBackColor = false;
+            this.BtnCopy.Click += new System.EventHandler(this.btncopy_Click);
             // 
             // label6
             // 
@@ -779,11 +780,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.Button BtnRerun;
+        private System.Windows.Forms.Button BtnOpen;
         private System.Windows.Forms.Button BtnPaste;
-        private System.Windows.Forms.Button btnundo;
-        private System.Windows.Forms.Button NewFile;
+        private System.Windows.Forms.Button BtnUndo;
+        private System.Windows.Forms.Button BtnNewFile;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 편집ToolStripMenuItem;
@@ -818,13 +819,13 @@
         private System.Windows.Forms.Button btnunder;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btncopy;
+        private System.Windows.Forms.Button BtnCopy;
         private System.Windows.Forms.ToolStripMenuItem 다른이름으로저ToolStripMenuItem;
         private System.Windows.Forms.ColorDialog fdcolor;
         private System.Windows.Forms.Button btnFont;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btncut;
+        private System.Windows.Forms.Button BtnCut;
         private System.Windows.Forms.FolderBrowserDialog fdbrowser;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
