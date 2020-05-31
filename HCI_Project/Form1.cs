@@ -73,6 +73,29 @@ namespace HCI_Project
             f.change_Title(false, route);
         }
 
+        //불러오기
+        private void BtnOpen_Click(object sender, EventArgs e)
+        {
+            openFileDialog.Filter = "텍스트파일|*.txt";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                route = openFileDialog.FileName;
+                text.Text = f.open_File(openFileDialog.FileName);
+                f.change_Title(true, route);
+            }
+        }
+
+        //실행취소
+        private void BtnUndo_Click(object sender, EventArgs e)
+        {
+            text.Undo();
+        }
+
+        //다시 실행
+        private void BtnRerun_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
         //폰트색상
@@ -95,26 +118,12 @@ namespace HCI_Project
 
 
 
-        //파일열기
-        private void BtnOpen_Click(object sender, EventArgs e)
-        {
-            openFileDialog.Filter = "텍스트파일|*.txt";
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                route = openFileDialog.FileName;
-                text.Text = f.open_File(openFileDialog.FileName);
-                f.change_Title(true, route);
-            }
-        }
+
 
 
       
 
-        //실행취소
-        private void btnundo_Click(object sender, EventArgs e)
-        {
-            text.Undo();
-        }
+
 
 
 
@@ -246,13 +255,5 @@ namespace HCI_Project
             if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
                 f.change_Title(false, route);
         }
-
-
-
-        private void BtnRerun_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
