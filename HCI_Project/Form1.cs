@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
-
+using System.Runtime.CompilerServices;
 
 namespace HCI_Project
 {
@@ -20,11 +20,11 @@ namespace HCI_Project
         private string status = null;
         public Form1()
         {
-            Search.ReadOnly = false;
             InitializeComponent();
         }
         Form2 child = new Form2();
         Form3 child2 = new Form3();
+        
 
         //#######################Button Function############################
         //파일저장
@@ -188,6 +188,7 @@ namespace HCI_Project
         private void BtnFind_Click(object sender, EventArgs e)
         {
             status = "Find";
+            Search.ReadOnly = false;
             Search.Focus();
             Search.SelectAll();
         }
@@ -196,6 +197,7 @@ namespace HCI_Project
         private void BtnFindAndChange_Click(object sender, EventArgs e)
         {
             status = "FindAndChange";
+            Search.ReadOnly = false;
             Search.Focus();
             Search.SelectAll();
         }

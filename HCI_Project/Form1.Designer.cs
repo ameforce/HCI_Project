@@ -693,6 +693,7 @@
             this.Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Search.Multiline = true;
             this.Search.Name = "Search";
+            this.Search.ReadOnly = true;
             this.Search.Size = new System.Drawing.Size(167, 24);
             this.Search.TabIndex = 25;
             this.Search.Text = "검색";
