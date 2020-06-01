@@ -68,6 +68,7 @@ namespace HCI_Project
                 start = pos + tb.Text.Length;
                 rt.SelectionStart = pos;
                 rt.SelectionLength = tb.Text.Length;
+                rt.SelectionBackColor = Color.AliceBlue;
                 rt.SelectionColor = Color.Red;
                 count++;
             }
