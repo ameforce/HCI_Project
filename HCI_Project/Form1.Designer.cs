@@ -42,7 +42,6 @@
             this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.저장ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.편집ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.실행취소UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.잘라내기TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.복사ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -240,7 +239,6 @@
             // 편집ToolStripMenuItem
             // 
             this.편집ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.실행취소UToolStripMenuItem,
             this.toolStripSeparator3,
             this.잘라내기TToolStripMenuItem,
             this.복사ToolStripMenuItem,
@@ -252,12 +250,6 @@
             this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             this.편집ToolStripMenuItem.Click += new System.EventHandler(this.편집ToolStripMenuItem_Click);
-            // 
-            // 실행취소UToolStripMenuItem
-            // 
-            this.실행취소UToolStripMenuItem.Name = "실행취소UToolStripMenuItem";
-            this.실행취소UToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
-            this.실행취소UToolStripMenuItem.Text = "실행취소(&U)";
             // 
             // toolStripSeparator3
             // 
@@ -729,10 +721,10 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.BtnFindAndChange);
             this.panel3.Controls.Add(this.BtnFind);
-            this.panel3.Location = new System.Drawing.Point(466, 32);
+            this.panel3.Location = new System.Drawing.Point(465, 32);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(445, 170);
+            this.panel3.Size = new System.Drawing.Size(446, 170);
             this.panel3.TabIndex = 29;
             // 
             // label13
@@ -817,7 +809,6 @@
         private System.Windows.Forms.ToolStripMenuItem 열기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 컨트롤CToolStripMenuItem;
         private System.Windows.Forms.FontDialog fdFont;
-        private System.Windows.Forms.ToolStripMenuItem 실행취소UToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem 잘라내기TToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 복사ToolStripMenuItem;

@@ -239,10 +239,10 @@
             this.panel3.Controls.Add(this.button17);
             this.panel3.Controls.Add(this.button15);
             this.panel3.Controls.Add(this.button18);
-            this.panel3.Location = new System.Drawing.Point(523, 21);
+            this.panel3.Location = new System.Drawing.Point(521, 21);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(386, 170);
+            this.panel3.Size = new System.Drawing.Size(388, 170);
             this.panel3.TabIndex = 28;
             // 
             // label3
