@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace HCI_Project
 {
@@ -27,6 +28,7 @@ namespace HCI_Project
             return temp_data.Equals(content);
         }
 
+        //파일 저장
         public Boolean save_File(string text, string route)
         {
             System.IO.File.WriteAllText(route, text, Encoding.Default);
@@ -38,8 +40,10 @@ namespace HCI_Project
             }
         }
 
+        //파일 열기
         public String open_File(string route){ return System.IO.File.ReadAllText(route, Encoding.Default); }
 
+        //프로그램 타이틀에 저장 여부 표시.
         public void change_Title(Boolean TF, string route)
         {
             string temp_data;
@@ -47,6 +51,26 @@ namespace HCI_Project
             if (TF) temp_data = route + " (저장됨)";
             else temp_data = route + " (저장 안 됨)";
             Form1.ActiveForm.Text = temp_data;
+        }
+
+        //텍스트 찾기
+        public int Find_Text(TextBox tb, RichTextBox rt)
+        {
+            rt.SelectionStart = 0;
+            rt.SelectionLength = rt.Text.Length;
+            rt.SelectionColor = Color.Black;
+
+            int start = 0, pos = 0, limit_max = rt.Text.Length;
+            while (!(start <= limit_max) && pos != -1)
+            {
+                pos = rt.Text.IndexOf(tb.Text, start, StringComparison.CurrentCulture);
+                if (pos == -1) break;
+                start += pos + tb.Text.Length;
+                rt.SelectionStart = pos;
+                rt.SelectionLength = tb.Text.Length;
+                rt.SelectionColor = Color.Red;
+            }
+            return pos;
         }
     }
 }
