@@ -96,7 +96,7 @@ namespace HCI_Project
         //다시 실행
         private void BtnRerun_Click(object sender, EventArgs e)
         {
-
+            TextEdit.Redo();
         }
 
         //폰트
@@ -269,6 +269,34 @@ namespace HCI_Project
             {
 
             }
+        }
+        
+        //도움말-정보
+        private void 정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("제작: 김종인, 이단일, 김민주"," Text Editor 정보");
+        }
+
+
+        //텍스트 가운데 정렬
+        private void button15_Click(object sender, EventArgs e)
+        {
+            TextEdit.SelectAll();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        //텍스트 왼쪽 정렬
+        private void button18_Click(object sender, EventArgs e)
+        {
+            TextEdit.SelectAll();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        //텍스트 오른쪽 정렬
+        private void button17_Click(object sender, EventArgs e)
+        {
+            TextEdit.SelectAll();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Right;
         }
     }
 }
