@@ -265,8 +265,7 @@ namespace HCI_Project
             if (status == "Find")
             {
                 int count = f.Find_Text(Search, TextEdit);
-                
-                
+                SearchStatus.Text = count + "개 찾음";
             }else if (status == "FindAndChange")
             {
 

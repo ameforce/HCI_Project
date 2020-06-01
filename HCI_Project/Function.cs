@@ -60,17 +60,18 @@ namespace HCI_Project
             rt.SelectionLength = rt.Text.Length;
             rt.SelectionColor = Color.Black;
 
-            int start = 0, pos = 0, limit_max = rt.Text.Length;
-            while (!(start <= limit_max) && pos != -1)
+            int start = 0, pos = 0, count = 0, limit_max = rt.Text.Length;
+            while (!(start > limit_max) && pos != -1 && tb.TextLength != 0)
             {
                 pos = rt.Text.IndexOf(tb.Text, start, StringComparison.CurrentCulture);
                 if (pos == -1) break;
-                start += pos + tb.Text.Length;
+                start = pos + tb.Text.Length;
                 rt.SelectionStart = pos;
                 rt.SelectionLength = tb.Text.Length;
                 rt.SelectionColor = Color.Red;
+                count++;
             }
-            return pos;
+            return count;
         }
     }
 }
