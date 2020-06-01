@@ -108,6 +108,36 @@ namespace HCI_Project
                 TextEdit.Font = fdFont.Font;
             }
         }
+        //형광펜
+        private bool ShowColorDialog(ref Color color)
+        {
+            bool selected;
+            using (ColorDialog dlg = new ColorDialog())
+            {
+                dlg.SolidColorOnly = true;
+                dlg.AllowFullOpen = false;
+                dlg.AnyColor = false;
+                dlg.FullOpen = false;
+                dlg.CustomColors = null;
+                dlg.Color = color;
+                if (dlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    selected = true;
+                    color = dlg.Color;
+                }
+                else
+                {
+                    selected = false;
+                }
+            }
+            return selected;
+        }
+        public void SelectBackColor()
+        {
+            Color color = TextEdit.SelectionBackColor;
+            if (ShowColorDialog(ref color))
+                TextEdit.SelectionBackColor = color;
+        }
 
         //글자 축소
         private void BtnReduction_Click(object sender, EventArgs e)
@@ -298,6 +328,11 @@ namespace HCI_Project
         {
             TextEdit.SelectAll();
             TextEdit.SelectionAlignment = HorizontalAlignment.Right;
+        }
+        //형광펜
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SelectBackColor();
         }
     }
 }
