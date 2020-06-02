@@ -22,9 +22,22 @@ namespace HCI_Project
         {
             InitializeComponent();
         }
+
         Form2 child = new Form2();
         Form3 child2 = new Form3();
-        
+
+        private RichTextBox doc;
+        public class EnterKeyEventArgs : EventArgs
+        {
+            private bool _cancel = false;
+
+            public bool Cancel
+            {
+                get { return _cancel; }
+                set { _cancel = value; }
+            }
+
+        }
 
         //#######################Button Function############################
         //파일저장
@@ -333,6 +346,14 @@ namespace HCI_Project
         private void button1_Click(object sender, EventArgs e)
         {
             SelectBackColor();
+        }
+        //글머리 표
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            TextEdit.SelectionBullet = true;
+            
+
         }
     }
 }
