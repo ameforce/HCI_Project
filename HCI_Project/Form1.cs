@@ -223,7 +223,7 @@ namespace HCI_Project
         {
             if (fdcolor.ShowDialog() != DialogResult.Cancel)
             {
-                TextEdit.ForeColor = fdcolor.Color;
+                TextEdit.ForeColor = fdcolor.Color;  
             }
         }
 
@@ -249,7 +249,7 @@ namespace HCI_Project
         //
         private void 컨트롤CToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             child.TopLevel = false;
             this.Controls.Add(child);
             child.Text = "";
@@ -280,7 +280,7 @@ namespace HCI_Project
         //서식기능 메뉴바
         private void ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         //
@@ -309,38 +309,39 @@ namespace HCI_Project
             {
                 int count = f.Find_Text(Search, TextEdit);
                 SearchStatus.Text = count + "개 찾음";
-            }else if (status == "FindAndChange")
+            }
+            else if (status == "FindAndChange")
             {
 
             }
         }
-        
+
         //도움말-정보
         private void 정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("제작: 김종인, 이단일, 김민주"," Text Editor 정보");
+            MessageBox.Show("제작: 김종인, 이단일, 김민주", " Text Editor 정보");
         }
 
 
-        //텍스트 가운데 정렬
+        //텍스트 오른쪽 정렬
         private void button15_Click(object sender, EventArgs e)
         {
-            TextEdit.SelectAll();
-            TextEdit.SelectionAlignment = HorizontalAlignment.Center;
+            TextEdit.Select();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Right;
         }
 
         //텍스트 왼쪽 정렬
         private void button18_Click(object sender, EventArgs e)
         {
-            TextEdit.SelectAll();
+            TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Left;
         }
 
-        //텍스트 오른쪽 정렬
+        //텍스트 가운데 정렬
         private void button17_Click(object sender, EventArgs e)
         {
-            TextEdit.SelectAll();
-            TextEdit.SelectionAlignment = HorizontalAlignment.Right;
+            TextEdit.Select();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Center;
         }
         //형광펜
         private void button1_Click(object sender, EventArgs e)
@@ -350,9 +351,9 @@ namespace HCI_Project
         //글머리 표
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
             TextEdit.SelectionBullet = true;
-            
+
 
         }
     }
