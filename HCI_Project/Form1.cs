@@ -349,11 +349,27 @@ namespace HCI_Project
             SelectBackColor();
         }
         //글머리 표
-        private void button2_Click(object sender, EventArgs e)
+       
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
-
             TextEdit.SelectionBullet = true;
+        }
 
+        private void TextEdit_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.A)
+            {
+                ((RichTextBox)sender).SelectAll();
+            }
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                ((RichTextBox)sender).Copy();
+            }
+            if (e.Control && e.KeyCode == Keys.V)
+            {
+                ((RichTextBox)sender).Paste();
+            }
 
         }
     }
