@@ -43,6 +43,7 @@
             this.저장ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.편집ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.실행취소ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.잘라내기TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.복사ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.붙여넣기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,7 +100,6 @@
             this.SearchStatus = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.실행취소ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -114,7 +114,7 @@
             this.BtnRerun.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnRerun.FlatAppearance.BorderSize = 0;
             this.BtnRerun.Image = ((System.Drawing.Image)(resources.GetObject("BtnRerun.Image")));
-            this.BtnRerun.Location = new System.Drawing.Point(132, 102);
+            this.BtnRerun.Location = new System.Drawing.Point(264, 102);
             this.BtnRerun.Name = "BtnRerun";
             this.BtnRerun.Size = new System.Drawing.Size(31, 31);
             this.BtnRerun.TabIndex = 0;
@@ -127,7 +127,7 @@
             this.BtnOpen.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnOpen.FlatAppearance.BorderSize = 0;
             this.BtnOpen.Image = ((System.Drawing.Image)(resources.GetObject("BtnOpen.Image")));
-            this.BtnOpen.Location = new System.Drawing.Point(132, 34);
+            this.BtnOpen.Location = new System.Drawing.Point(264, 33);
             this.BtnOpen.Name = "BtnOpen";
             this.BtnOpen.Size = new System.Drawing.Size(31, 31);
             this.BtnOpen.TabIndex = 3;
@@ -140,7 +140,7 @@
             this.BtnPaste.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnPaste.FlatAppearance.BorderSize = 0;
             this.BtnPaste.Image = ((System.Drawing.Image)(resources.GetObject("BtnPaste.Image")));
-            this.BtnPaste.Location = new System.Drawing.Point(66, 0);
+            this.BtnPaste.Location = new System.Drawing.Point(69, 8);
             this.BtnPaste.Name = "BtnPaste";
             this.BtnPaste.Size = new System.Drawing.Size(60, 50);
             this.BtnPaste.TabIndex = 4;
@@ -153,7 +153,7 @@
             this.BtnUndo.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnUndo.FlatAppearance.BorderSize = 0;
             this.BtnUndo.Image = ((System.Drawing.Image)(resources.GetObject("BtnUndo.Image")));
-            this.BtnUndo.Location = new System.Drawing.Point(132, 68);
+            this.BtnUndo.Location = new System.Drawing.Point(264, 68);
             this.BtnUndo.Name = "BtnUndo";
             this.BtnUndo.Size = new System.Drawing.Size(31, 31);
             this.BtnUndo.TabIndex = 5;
@@ -166,7 +166,7 @@
             this.BtnNewFile.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnNewFile.FlatAppearance.BorderSize = 0;
             this.BtnNewFile.Image = ((System.Drawing.Image)(resources.GetObject("BtnNewFile.Image")));
-            this.BtnNewFile.Location = new System.Drawing.Point(132, 1);
+            this.BtnNewFile.Location = new System.Drawing.Point(264, 3);
             this.BtnNewFile.Name = "BtnNewFile";
             this.BtnNewFile.Size = new System.Drawing.Size(31, 28);
             this.BtnNewFile.TabIndex = 7;
@@ -188,7 +188,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(797, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(898, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -256,6 +256,12 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(174, 6);
             // 
+            // 실행취소ToolStripMenuItem
+            // 
+            this.실행취소ToolStripMenuItem.Name = "실행취소ToolStripMenuItem";
+            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.실행취소ToolStripMenuItem.Text = "실행취소";
+            // 
             // 잘라내기TToolStripMenuItem
             // 
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
@@ -267,7 +273,7 @@
             // 
             this.복사ToolStripMenuItem.Name = "복사ToolStripMenuItem";
             this.복사ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.복사ToolStripMenuItem.Text = "복사";
             this.복사ToolStripMenuItem.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
@@ -275,7 +281,7 @@
             // 
             this.붙여넣기ToolStripMenuItem.Name = "붙여넣기ToolStripMenuItem";
             this.붙여넣기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.붙여넣기ToolStripMenuItem.Text = "붙여넣기";
             this.붙여넣기ToolStripMenuItem.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
@@ -287,7 +293,7 @@
             // 찾기ToolStripMenuItem
             // 
             this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
-            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.찾기ToolStripMenuItem.Text = "찾기";
             this.찾기ToolStripMenuItem.Click += new System.EventHandler(this.BtnFind_Click);
             // 
@@ -355,13 +361,13 @@
             this.panel1.Controls.Add(this.BtnNewFile);
             this.panel1.Location = new System.Drawing.Point(0, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(235, 136);
+            this.panel1.Size = new System.Drawing.Size(366, 136);
             this.panel1.TabIndex = 21;
             // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(169, 7);
+            this.label11.Location = new System.Drawing.Point(301, 6);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 18);
             this.label11.TabIndex = 29;
@@ -373,7 +379,7 @@
             this.BtnCut.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnCut.FlatAppearance.BorderSize = 0;
             this.BtnCut.Image = ((System.Drawing.Image)(resources.GetObject("BtnCut.Image")));
-            this.BtnCut.Location = new System.Drawing.Point(5, 68);
+            this.BtnCut.Location = new System.Drawing.Point(198, 8);
             this.BtnCut.Name = "BtnCut";
             this.BtnCut.Size = new System.Drawing.Size(60, 50);
             this.BtnCut.TabIndex = 28;
@@ -384,7 +390,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label10.Location = new System.Drawing.Point(5, 115);
+            this.label10.Location = new System.Drawing.Point(198, 64);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 18);
             this.label10.TabIndex = 27;
@@ -396,7 +402,7 @@
             this.BtnCopy.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnCopy.FlatAppearance.BorderSize = 0;
             this.BtnCopy.Image = ((System.Drawing.Image)(resources.GetObject("BtnCopy.Image")));
-            this.BtnCopy.Location = new System.Drawing.Point(66, 68);
+            this.BtnCopy.Location = new System.Drawing.Point(132, 8);
             this.BtnCopy.Name = "BtnCopy";
             this.BtnCopy.Size = new System.Drawing.Size(60, 50);
             this.BtnCopy.TabIndex = 26;
@@ -407,7 +413,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(66, 49);
+            this.label6.Location = new System.Drawing.Point(69, 63);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 18);
             this.label6.TabIndex = 25;
@@ -417,7 +423,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(169, 108);
+            this.label5.Location = new System.Drawing.Point(301, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 18);
             this.label5.TabIndex = 24;
@@ -427,7 +433,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(169, 74);
+            this.label4.Location = new System.Drawing.Point(301, 76);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 18);
             this.label4.TabIndex = 23;
@@ -437,7 +443,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(169, 40);
+            this.label3.Location = new System.Drawing.Point(301, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 18);
             this.label3.TabIndex = 22;
@@ -447,7 +453,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(66, 115);
+            this.label2.Location = new System.Drawing.Point(132, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 18);
             this.label2.TabIndex = 21;
@@ -457,7 +463,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(5, 49);
+            this.label1.Location = new System.Drawing.Point(5, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 18);
             this.label1.TabIndex = 20;
@@ -468,7 +474,7 @@
             // 
             this.BtnSave.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.Image")));
-            this.BtnSave.Location = new System.Drawing.Point(5, 0);
+            this.BtnSave.Location = new System.Drawing.Point(5, 8);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(60, 50);
             this.BtnSave.TabIndex = 1;
@@ -495,7 +501,7 @@
             this.BtnColor.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnColor.FlatAppearance.BorderSize = 0;
             this.BtnColor.Image = ((System.Drawing.Image)(resources.GetObject("BtnColor.Image")));
-            this.BtnColor.Location = new System.Drawing.Point(5, 8);
+            this.BtnColor.Location = new System.Drawing.Point(127, 35);
             this.BtnColor.Name = "BtnColor";
             this.BtnColor.Size = new System.Drawing.Size(25, 25);
             this.BtnColor.TabIndex = 18;
@@ -521,7 +527,7 @@
             this.button18.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(5, 42);
+            this.button18.Location = new System.Drawing.Point(5, 32);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(25, 25);
             this.button18.TabIndex = 19;
@@ -533,7 +539,7 @@
             this.button15.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(67, 42);
+            this.button15.Location = new System.Drawing.Point(67, 35);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(25, 25);
             this.button15.TabIndex = 16;
@@ -545,7 +551,7 @@
             this.button17.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(36, 42);
+            this.button17.Location = new System.Drawing.Point(36, 33);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(25, 25);
             this.button17.TabIndex = 18;
@@ -609,15 +615,17 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCyan;
             this.panel2.Controls.Add(this.BtnEnlargement);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.BtnReduction);
             this.panel2.Controls.Add(this.BtnItalic);
             this.panel2.Controls.Add(this.BtnStrikethrough);
+            this.panel2.Controls.Add(this.BtnColor);
             this.panel2.Controls.Add(this.BtnFont);
             this.panel2.Controls.Add(this.BtnUnder);
             this.panel2.Controls.Add(this.BtnBold);
-            this.panel2.Location = new System.Drawing.Point(236, 26);
+            this.panel2.Location = new System.Drawing.Point(367, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(170, 62);
+            this.panel2.Size = new System.Drawing.Size(186, 137);
             this.panel2.TabIndex = 24;
             // 
             // BtnEnlargement
@@ -668,7 +676,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(36, 8);
+            this.button1.Location = new System.Drawing.Point(158, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(25, 25);
             this.button1.TabIndex = 20;
@@ -678,7 +686,7 @@
             // 
             // Search
             // 
-            this.Search.Location = new System.Drawing.Point(533, 2);
+            this.Search.Location = new System.Drawing.Point(617, 3);
             this.Search.Multiline = true;
             this.Search.Name = "Search";
             this.Search.ReadOnly = true;
@@ -696,10 +704,10 @@
             // TextEdit
             // 
             this.TextEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TextEdit.Location = new System.Drawing.Point(0, 161);
+            this.TextEdit.Location = new System.Drawing.Point(0, 159);
             this.TextEdit.Name = "TextEdit";
             this.TextEdit.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
-            this.TextEdit.Size = new System.Drawing.Size(800, 400);
+            this.TextEdit.Size = new System.Drawing.Size(893, 400);
             this.TextEdit.TabIndex = 26;
             this.TextEdit.Text = "";
             this.TextEdit.TextChanged += new System.EventHandler(this.TextEdit_TextChanged);
@@ -712,9 +720,9 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.BtnFindAndChange);
             this.panel3.Controls.Add(this.BtnFind);
-            this.panel3.Location = new System.Drawing.Point(407, 26);
+            this.panel3.Location = new System.Drawing.Point(714, 26);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(390, 136);
+            this.panel3.Size = new System.Drawing.Size(179, 133);
             this.panel3.TabIndex = 29;
             // 
             // label13
@@ -746,7 +754,7 @@
             // SearchStatus
             // 
             this.SearchStatus.AutoSize = true;
-            this.SearchStatus.Location = new System.Drawing.Point(685, 6);
+            this.SearchStatus.Location = new System.Drawing.Point(770, 5);
             this.SearchStatus.Name = "SearchStatus";
             this.SearchStatus.Size = new System.Drawing.Size(61, 12);
             this.SearchStatus.TabIndex = 31;
@@ -756,21 +764,19 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.LightCyan;
             this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.button18);
             this.panel4.Controls.Add(this.button15);
-            this.panel4.Controls.Add(this.BtnColor);
             this.panel4.Controls.Add(this.button17);
-            this.panel4.Location = new System.Drawing.Point(236, 89);
+            this.panel4.Location = new System.Drawing.Point(556, 26);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(170, 73);
+            this.panel4.Size = new System.Drawing.Size(157, 133);
             this.panel4.TabIndex = 32;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Location = new System.Drawing.Point(98, 41);
+            this.button2.Location = new System.Drawing.Point(98, 35);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(54, 25);
             this.button2.TabIndex = 21;
@@ -778,18 +784,12 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // 실행취소ToolStripMenuItem
-            // 
-            this.실행취소ToolStripMenuItem.Name = "실행취소ToolStripMenuItem";
-            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.실행취소ToolStripMenuItem.Text = "실행취소";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(797, 571);
+            this.ClientSize = new System.Drawing.Size(898, 571);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.SearchStatus);
             this.Controls.Add(this.TextEdit);
@@ -803,6 +803,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "TEXT EDITOR";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
