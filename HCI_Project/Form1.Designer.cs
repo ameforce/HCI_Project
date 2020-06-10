@@ -57,6 +57,7 @@
             this.사용방법ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fdFont = new System.Windows.Forms.FontDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.BtnCut = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -80,6 +81,7 @@
             this.fdcolor = new System.Windows.Forms.ColorDialog();
             this.BtnFont = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.BtnEnlargement = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.fdbrowser = new System.Windows.Forms.FolderBrowserDialog();
@@ -92,6 +94,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TextEdit = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -99,11 +102,8 @@
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.SearchStatus = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -258,26 +258,26 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(174, 6);
             // 
             // 실행취소ToolStripMenuItem
             // 
             this.실행취소ToolStripMenuItem.Name = "실행취소ToolStripMenuItem";
-            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.실행취소ToolStripMenuItem.Text = "실행취소";
             // 
             // 잘라내기TToolStripMenuItem
             // 
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
             this.잘라내기TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.잘라내기TToolStripMenuItem.Text = "잘라내기(&T)";
             // 
             // 복사ToolStripMenuItem
             // 
             this.복사ToolStripMenuItem.Name = "복사ToolStripMenuItem";
             this.복사ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.복사ToolStripMenuItem.Text = "복사";
             this.복사ToolStripMenuItem.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
@@ -285,26 +285,26 @@
             // 
             this.붙여넣기ToolStripMenuItem.Name = "붙여넣기ToolStripMenuItem";
             this.붙여넣기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.붙여넣기ToolStripMenuItem.Text = "붙여넣기";
             this.붙여넣기ToolStripMenuItem.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(174, 6);
             // 
             // 찾기ToolStripMenuItem
             // 
             this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
-            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.찾기ToolStripMenuItem.Text = "찾기";
             this.찾기ToolStripMenuItem.Click += new System.EventHandler(this.BtnFind_Click);
             // 
             // 다음찾기ToolStripMenuItem
             // 
             this.다음찾기ToolStripMenuItem.Name = "다음찾기ToolStripMenuItem";
-            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.다음찾기ToolStripMenuItem.Text = "바꾸기";
             // 
             // 컨트롤CToolStripMenuItem
@@ -368,6 +368,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(366, 136);
             this.panel1.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label7.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(144, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 18);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "편집";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -634,6 +645,17 @@
             this.panel2.Size = new System.Drawing.Size(186, 137);
             this.panel2.TabIndex = 24;
             // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label8.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(62, 107);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(60, 18);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "글꼴";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BtnEnlargement
             // 
             this.BtnEnlargement.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -709,6 +731,9 @@
             // 
             // TextEdit
             // 
+            this.TextEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TextEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TextEdit.Location = new System.Drawing.Point(0, 159);
             this.TextEdit.Name = "TextEdit";
@@ -721,6 +746,9 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
@@ -731,6 +759,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(179, 133);
             this.panel3.TabIndex = 29;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label14.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(68, 110);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 18);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "도구";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
@@ -780,6 +819,17 @@
             this.panel4.Size = new System.Drawing.Size(157, 133);
             this.panel4.TabIndex = 32;
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label9.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(49, 110);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 18);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "단락";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -792,55 +842,11 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.label7.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(144, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 18);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "편집";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.label8.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(62, 107);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 18);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "글꼴";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.label9.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(49, 110);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 18);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "단락";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.label14.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(68, 110);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 18);
-            this.label14.TabIndex = 34;
-            this.label14.Text = "도구";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(898, 571);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.SearchStatus);

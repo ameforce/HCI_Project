@@ -38,7 +38,7 @@ namespace HCI_Project
             }
 
         }
-
+        
         //#######################Button Function############################
         //파일저장
         private void BtnSave_Click(object sender, EventArgs e)
