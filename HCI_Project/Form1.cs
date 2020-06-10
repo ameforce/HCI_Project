@@ -330,7 +330,8 @@ namespace HCI_Project
             }
             if (e.Control && e.KeyCode == Keys.V)
             {
-                ((RichTextBox)sender).Paste();
+                //((RichTextBox)sender).Paste();
+                TextEdit.Paste();
             }
 
         }

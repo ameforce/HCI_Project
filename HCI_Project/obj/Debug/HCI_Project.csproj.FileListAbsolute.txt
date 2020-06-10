@@ -37,8 +37,6 @@ C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\bin\Debug
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\bin\Debug\HCI_Project.pdb
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csprojAssemblyReference.cache
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Form1.resources
-C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Form2.resources
-C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Form3.resources
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
