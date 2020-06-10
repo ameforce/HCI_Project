@@ -56,7 +56,7 @@ namespace HCI_Project
         //붙여넣기
         private void BtnPaste_Click(object sender, EventArgs e)
         {
-            TextEdit.Paste();
+            f.Paste_Text(TextEdit);
         }
 
         //오려두기
@@ -318,27 +318,38 @@ namespace HCI_Project
             TextEdit.SelectionBullet = true;
         }
 
-        private void TextEdit_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            if (e.Control && e.KeyCode == Keys.A)
-            {
-                ((RichTextBox)sender).SelectAll();
-            }
-            if (e.Control && e.KeyCode == Keys.C)
-            {
-                ((RichTextBox)sender).Copy();
-            }
-            if (e.Control && e.KeyCode == Keys.V)
-            {
-                //((RichTextBox)sender).Paste();
-                TextEdit.Paste();
-            }
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void TextEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //string temp_data = "데이터: " + e.KeyChar;
+            //MessageBox.Show(temp_data);
+            /*
+
+            else if (e.Control && e.KeyCode == Keys.C)
+            {
+                ((RichTextBox)sender).Copy();
+            }
+            else if (e.Control && e.KeyCode == Keys.V)
+            {
+                //((RichTextBox)sender).Paste();
+                BtnPaste_Click(sender, e);
+                MessageBox.Show("check");
+                //TextEdit.Paste();
+            }
+            */
+        }
+
+        //TextEdit Hotkey Setting
+        private void TextEdit_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            //잘라내기 HOTKEY
+            if (e.Control && e.KeyCode == Keys.X){ TextEdit.Cut(); }
+        }
+
     }
 }

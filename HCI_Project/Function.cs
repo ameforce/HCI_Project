@@ -74,5 +74,11 @@ namespace HCI_Project
             }
             return count;
         }
+
+        //텍스트 박스에 붙여넣기
+        public void Paste_Text(RichTextBox rt)
+        {
+            rt.Paste();
+        }
     }
 }
