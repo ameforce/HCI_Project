@@ -18,6 +18,7 @@ namespace HCI_Project
         private Function f = new Function();
         private string route = null;
         private string status = null;
+        private int edit_label_num = 8;
         public Form1()
         {
             InitializeComponent();
@@ -48,29 +49,52 @@ namespace HCI_Project
                 if (f.save_File(TextEdit.Text, saveFileDialog.FileName))
                 {
                     route = saveFileDialog.FileName;
+                    string[] temp_data = route.Split('\\');
+                    f.ChangeLabel(EditLabel, f.StringSummary(temp_data[temp_data.Length - 1], edit_label_num) + "가 저장되었습니다.");
                     f.change_Title(f.check_Content(route, TextEdit.Text), route);
                 }
             }
         }
 
         //붙여넣기
-        private void BtnPaste_Click(object sender, EventArgs e)
+        private void BtnPaste_Click(object sender, EventArgs e) 
         {
-            f.Paste_Text(TextEdit);
-        }
-
-        //오려두기
-        private void BtnCut_Click(object sender, EventArgs e)
-        {
-            if (status == null) { } //쓰레기.
-            TextEdit.Cut();
+            TextEdit.Paste();
+            f.ChangeLabel(EditLabel, f.StringSummary(Clipboard.GetText(), edit_label_num) + "가 붙여 넣어졌습니다.");
         }
 
         //복사하기
         private void BtnCopy_Click(object sender, EventArgs e)
         {
             TextEdit.Copy();
+            string temp_data = Clipboard.GetText();
+            temp_data = f.StringSummary(temp_data, edit_label_num) + "가 복사되었습니다.";
+            f.ChangeLabel(EditLabel, temp_data);
         }
+
+        //오려두기
+        private void BtnCut_Click(object sender, EventArgs e) {
+            TextEdit.Cut();
+            string temp_data = Clipboard.GetText();
+            temp_data = f.StringSummary(temp_data, edit_label_num) + "가 오려졌습니다.";
+            f.ChangeLabel(EditLabel, temp_data);
+        }
+
+        //TextEdit의 Text가 선택될 때
+        private void TextEdit_SelectionChanged(object sender, EventArgs e)
+        {
+            if (TextEdit.SelectedText == "")
+            {
+                BtnCopy.Enabled = false;
+                BtnCut.Enabled = false;
+            }
+            else
+            {
+                BtnCopy.Enabled = true;
+                BtnCut.Enabled = true;
+            }
+        }
+
 
         //새 파일 버튼 클릭
         private void BtnNewFile_Click(object sender, EventArgs e)
@@ -99,16 +123,10 @@ namespace HCI_Project
         }
 
         //실행취소
-        private void BtnUndo_Click(object sender, EventArgs e)
-        {
-            TextEdit.Undo();
-        }
+        private void BtnUndo_Click(object sender, EventArgs e) { TextEdit.Undo(); }
 
         //다시 실행
-        private void BtnRerun_Click(object sender, EventArgs e)
-        {
-            TextEdit.Redo();
-        }
+        private void BtnRerun_Click(object sender, EventArgs e) { TextEdit.Redo(); }
 
         //폰트
         private void BtnFont_Click(object sender, EventArgs e)
@@ -267,14 +285,15 @@ namespace HCI_Project
         //Search 내용 변경 시 status에 따라 찾기 및 바꾸기 수행.
         private void Search_TextChanged(object sender, EventArgs e)
         {
-            if (status == "Find")
+            if (status == "Find")   //찾기
             {
                 int count = f.Find_Text(Search, TextEdit);
                 SearchStatus.Text = count + "개 찾음";
             }
-            else if (status == "FindAndChange")
+            else if (status == "FindAndChange") //바꾸기
             {
-
+                int count = f.Find_Text(Search, TextEdit);
+                SearchStatus.Text = count + "개 찾음";
             }
         }
 
@@ -324,32 +343,14 @@ namespace HCI_Project
 
         }
 
-        private void TextEdit_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //string temp_data = "데이터: " + e.KeyChar;
-            //MessageBox.Show(temp_data);
-            /*
-
-            else if (e.Control && e.KeyCode == Keys.C)
-            {
-                ((RichTextBox)sender).Copy();
-            }
-            else if (e.Control && e.KeyCode == Keys.V)
-            {
-                //((RichTextBox)sender).Paste();
-                BtnPaste_Click(sender, e);
-                MessageBox.Show("check");
-                //TextEdit.Paste();
-            }
-            */
-        }
-
         //TextEdit Hotkey Setting
         private void TextEdit_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             //잘라내기 HOTKEY
             if (e.Control && e.KeyCode == Keys.X){ TextEdit.Cut(); }
         }
+
+
 
     }
 }

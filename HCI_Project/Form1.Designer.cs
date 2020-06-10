@@ -103,6 +103,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.EditLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -150,7 +151,7 @@
             this.BtnPaste.Name = "BtnPaste";
             this.BtnPaste.Size = new System.Drawing.Size(69, 62);
             this.BtnPaste.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.BtnPaste, "붙여넣기");
+            this.toolTip1.SetToolTip(this.BtnPaste, "붙여넣기 (Ctrl + V)");
             this.BtnPaste.UseVisualStyleBackColor = false;
             this.BtnPaste.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
@@ -342,6 +343,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.Controls.Add(this.EditLabel);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.BtnCut);
@@ -369,7 +371,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.MediumTurquoise;
             this.label7.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(165, 138);
+            this.label7.Location = new System.Drawing.Point(115, 136);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 22);
             this.label7.TabIndex = 30;
@@ -389,6 +391,7 @@
             // BtnCut
             // 
             this.BtnCut.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnCut.Enabled = false;
             this.BtnCut.FlatAppearance.BorderSize = 0;
             this.BtnCut.Image = ((System.Drawing.Image)(resources.GetObject("BtnCut.Image")));
             this.BtnCut.Location = new System.Drawing.Point(226, 10);
@@ -396,7 +399,7 @@
             this.BtnCut.Name = "BtnCut";
             this.BtnCut.Size = new System.Drawing.Size(69, 62);
             this.BtnCut.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.BtnCut, "오려두기");
+            this.toolTip1.SetToolTip(this.BtnCut, "오려두기 (Ctrl + X)");
             this.BtnCut.UseVisualStyleBackColor = false;
             this.BtnCut.Click += new System.EventHandler(this.BtnCut_Click);
             // 
@@ -413,6 +416,7 @@
             // BtnCopy
             // 
             this.BtnCopy.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnCopy.Enabled = false;
             this.BtnCopy.FlatAppearance.BorderSize = 0;
             this.BtnCopy.Image = ((System.Drawing.Image)(resources.GetObject("BtnCopy.Image")));
             this.BtnCopy.Location = new System.Drawing.Point(151, 10);
@@ -420,7 +424,7 @@
             this.BtnCopy.Name = "BtnCopy";
             this.BtnCopy.Size = new System.Drawing.Size(69, 62);
             this.BtnCopy.TabIndex = 26;
-            this.toolTip1.SetToolTip(this.BtnCopy, "복사하기");
+            this.toolTip1.SetToolTip(this.BtnCopy, "복사하기 (Ctrl + C)");
             this.BtnCopy.UseVisualStyleBackColor = false;
             this.BtnCopy.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
@@ -494,7 +498,7 @@
             this.BtnSave.Size = new System.Drawing.Size(69, 62);
             this.BtnSave.TabIndex = 1;
             this.BtnSave.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.toolTip1.SetToolTip(this.BtnSave, "파일저장");
+            this.toolTip1.SetToolTip(this.BtnSave, "파일저장 (Ctrl + S)");
             this.BtnSave.UseVisualStyleBackColor = false;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
@@ -757,6 +761,7 @@
             this.TextEdit.Size = new System.Drawing.Size(1020, 499);
             this.TextEdit.TabIndex = 26;
             this.TextEdit.Text = "";
+            this.TextEdit.SelectionChanged += new System.EventHandler(this.TextEdit_SelectionChanged);
             this.TextEdit.TextChanged += new System.EventHandler(this.TextEdit_TextChanged);
             this.TextEdit.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.TextEdit_PreviewKeyDown);
             // 
@@ -860,6 +865,16 @@
             this.button2.TabIndex = 21;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // EditLabel
+            // 
+            this.EditLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.EditLabel.Location = new System.Drawing.Point(6, 102);
+            this.EditLabel.Name = "EditLabel";
+            this.EditLabel.Size = new System.Drawing.Size(289, 23);
+            this.EditLabel.TabIndex = 31;
+            this.EditLabel.Text = "No DATA";
+            this.EditLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -970,6 +985,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label EditLabel;
     }
 }
 

@@ -80,5 +80,22 @@ namespace HCI_Project
         {
             rt.Paste();
         }
+
+        public string StringSummary(string text, int num)
+        {
+            string temp_text;
+            if (text.Length > num)
+            {
+                temp_text = text.Substring(0, num);
+                temp_text = temp_text + "...";
+            }
+            else{ temp_text = text; }
+            return temp_text;
+        }
+
+        public void ChangeLabel(Label l, string text)
+        {
+            l.Text = text;
+        }
     }
 }
