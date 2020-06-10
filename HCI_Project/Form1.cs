@@ -23,8 +23,6 @@ namespace HCI_Project
             InitializeComponent();
         }
 
-        Form2 child = new Form2();
-        Form3 child2 = new Form3();
 
         private RichTextBox doc;
         public class EnterKeyEventArgs : EventArgs
@@ -250,48 +248,12 @@ namespace HCI_Project
         private void 컨트롤CToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            child.TopLevel = false;
-            this.Controls.Add(child);
-            child.Text = "";
-            child.ControlBox = false;
-            panel1.Hide();
-            panel2.Hide();
-            panel3.Hide();
-            panel4.Hide();
-            child2.Hide();
-            child.Show();
-        }
-
-        //편집기능 메뉴바
-        private void 편집ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            child2.TopLevel = false;
-            this.Controls.Add(child2);
-            child2.Text = "";
-            child2.ControlBox = false;
-            panel1.Hide();
-            panel2.Hide();
-            panel3.Hide();
-            panel4.Hide();
-            child.Hide();
-            child2.Show();
         }
 
         //서식기능 메뉴바
         private void ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        //
-        private void 홈ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            child2.Hide();
-            child.Hide();
-            panel1.Show();
-            panel2.Show();
-            panel3.Show();
-            panel4.Show();
         }
 
         //TextEdit 내용 변경 시 타이틀 내용 변경.
