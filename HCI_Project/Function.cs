@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Security.Cryptography;
 
 namespace HCI_Project
 {
@@ -81,6 +82,7 @@ namespace HCI_Project
             rt.Paste();
         }
 
+        //글자 수 지정 크기만큼 줄이는 함수
         public string StringSummary(string text, int num)
         {
             string temp_text;
@@ -93,9 +95,44 @@ namespace HCI_Project
             return temp_text;
         }
 
+        //Label TEXT 변경하는 함수
         public void ChangeLabel(Label l, string text)
         {
             l.Text = text;
         }
+
+        //형광펜 Dialog
+        private bool ShowColorDialog(ref Color color, Form temp_f)
+        {
+            bool selected;
+            using (ColorDialog dlg = new ColorDialog())
+            {
+                dlg.SolidColorOnly = true;
+                dlg.AllowFullOpen = false;
+                dlg.AnyColor = false;
+                dlg.FullOpen = false;
+                dlg.CustomColors = null;
+                dlg.Color = color;
+                if (dlg.ShowDialog(temp_f) == DialogResult.OK)
+                {
+                    selected = true;
+                    color = dlg.Color;
+                }
+                else
+                {
+                    selected = false;
+                }
+            }
+            return selected;
+        }
+
+        //형광펜 설정 함수.
+        public void SelectBackColor(RichTextBox rt, Form1 temp_f)
+        {
+            Color color = rt.SelectionBackColor;
+            if (ShowColorDialog(ref color, temp_f))
+                rt.SelectionBackColor = color;
+        }
+
     }
 }

@@ -531,7 +531,7 @@
         EBfMGgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnHighlight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAeAB4AAD/4QCsRXhpZgAATU0AKgAAAAgAAwE7AAIAAAAKAAAAModpAAQAAAAB
         AAAAPJydAAEAAAAIAAAAnAAAAADquYDrr7zso7wAAASQAwACAAAAFAAAAHKQBAACAAAAFAAAAIaSkQAC

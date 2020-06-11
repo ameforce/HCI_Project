@@ -89,7 +89,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.BtnEnlargement = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnHighlight = new System.Windows.Forms.Button();
             this.fdbrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
@@ -206,7 +206,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1026, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1026, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -222,7 +222,7 @@
             this.ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.ToolStripMenuItem.Text = "파일(&F)";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
@@ -278,7 +278,7 @@
             this.시간날짜ToolStripMenuItem});
             this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
             this.편집ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             // 
             // toolStripSeparator3
@@ -355,7 +355,7 @@
             this.글꼴ToolStripMenuItem,
             this.자동줄바꿈ToolStripMenuItem});
             this.컨트롤CToolStripMenuItem.Name = "컨트롤CToolStripMenuItem";
-            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
+            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(69, 26);
             this.컨트롤CToolStripMenuItem.Text = "서식(&U)";
             this.컨트롤CToolStripMenuItem.Click += new System.EventHandler(this.컨트롤CToolStripMenuItem_Click);
             // 
@@ -378,7 +378,7 @@
             this.정보ToolStripMenuItem,
             this.사용방법ToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
             this.도움말ToolStripMenuItem.Text = "도움말(&H)";
             // 
             // 정보ToolStripMenuItem
@@ -711,7 +711,7 @@
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.BtnEnlargement);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.BtnHighlight);
             this.panel2.Controls.Add(this.BtnReduction);
             this.panel2.Controls.Add(this.BtnItalic);
             this.panel2.Controls.Add(this.BtnStrikethrough);
@@ -791,19 +791,19 @@
             this.BtnEnlargement.UseVisualStyleBackColor = false;
             this.BtnEnlargement.Click += new System.EventHandler(this.BtnEnlargement_Click);
             // 
-            // button1
+            // BtnHighlight
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(181, 70);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 31);
-            this.button1.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.button1, "형광펜");
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnHighlight.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnHighlight.FlatAppearance.BorderSize = 0;
+            this.BtnHighlight.Image = ((System.Drawing.Image)(resources.GetObject("BtnHighlight.Image")));
+            this.BtnHighlight.Location = new System.Drawing.Point(181, 70);
+            this.BtnHighlight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnHighlight.Name = "BtnHighlight";
+            this.BtnHighlight.Size = new System.Drawing.Size(29, 31);
+            this.BtnHighlight.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.BtnHighlight, "형광펜");
+            this.BtnHighlight.UseVisualStyleBackColor = false;
+            this.BtnHighlight.Click += new System.EventHandler(this.BtnHighlight_Click);
             // 
             // openFileDialog
             // 
@@ -1106,7 +1106,7 @@
         private System.Windows.Forms.Label SearchStatus;
         private System.Windows.Forms.ToolStripMenuItem 정보ToolStripMenuItem;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnHighlight;
         private System.Windows.Forms.ToolStripMenuItem 사용방법ToolStripMenuItem;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripMenuItem 실행취소ToolStripMenuItem;
