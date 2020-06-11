@@ -311,7 +311,6 @@ namespace HCI_Project
         }
         //글머리 표
        
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             TextEdit.SelectionBullet = true;
@@ -327,7 +326,8 @@ namespace HCI_Project
         private void TextEdit_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             //잘라내기 HOTKEY
-            if (e.Control && e.KeyCode == Keys.X){ TextEdit.Cut(); }
+            if (e.Control && e.KeyCode == Keys.T){ TextEdit.Cut(); }
+            if (e.Control && e.KeyCode == Keys.Z) { TextEdit.Undo(); }
         }
         //콤보박스 글자크기
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
