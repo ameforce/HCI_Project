@@ -178,59 +178,39 @@ namespace HCI_Project
         //글자 확대
         private void BtnEnlargement_Click(object sender, EventArgs e)
         {
-            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, TextEdit.SelectionFont.Size + 1,
+            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily,TextEdit.SelectionFont.Size + 1,
                 TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
         }
-
+        
         //굵게
         private void BtnBold_Click(object sender, EventArgs e)
         {
-            if (TextEdit.SelectionFont.Bold)
             {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Bold);
+                TextEdit.SelectionFont = new Font(TextEdit.Font, TextEdit.SelectionFont.Style ^ FontStyle.Bold);
             }
         }
 
         //기울임
         private void BtnItalic_Click(object sender, EventArgs e)
         {
-            if (TextEdit.SelectionFont.Italic)
             {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Italic);
+                TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Italic);
             }
         }
 
         //밑줄
         private void BtnUnder_Click(object sender, EventArgs e)
         {
-            if (TextEdit.SelectionFont.Underline)
             {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Underline);
+                TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Underline);
             }
         }
 
         //취소선
         private void BtnStrikethrough_Click(object sender, EventArgs e)
         {
-            if (TextEdit.SelectionFont.Strikeout)
             {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.SelectionFont, FontStyle.Strikeout);
+                TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Strikeout);
             }
         }
 
@@ -349,8 +329,13 @@ namespace HCI_Project
             //잘라내기 HOTKEY
             if (e.Control && e.KeyCode == Keys.X){ TextEdit.Cut(); }
         }
+        //콤보박스 글자크기
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+             TextEdit.Font = new Font(TextEdit.Font.FontFamily, Convert.ToInt32(comboBox1.SelectedItem), TextEdit.Font.Style);
 
-
-
+            
+        }
     }
 }

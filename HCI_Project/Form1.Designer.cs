@@ -104,6 +104,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -212,20 +214,20 @@
             // 새로만들기ToolStripMenuItem
             // 
             this.새로만들기ToolStripMenuItem.Name = "새로만들기ToolStripMenuItem";
-            this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.새로만들기ToolStripMenuItem.Text = "새로만들기";
             // 
             // 열기ToolStripMenuItem
             // 
             this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
-            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.열기ToolStripMenuItem.Text = "열기";
             // 
             // 저장ToolStripMenuItem
             // 
             this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
             this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.저장ToolStripMenuItem.Text = "파일저장";
             this.저장ToolStripMenuItem.Click += new System.EventHandler(this.BtnSave_Click);
             // 
@@ -248,26 +250,26 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(174, 6);
             // 
             // 실행취소ToolStripMenuItem
             // 
             this.실행취소ToolStripMenuItem.Name = "실행취소ToolStripMenuItem";
-            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.실행취소ToolStripMenuItem.Text = "실행취소";
             // 
             // 잘라내기TToolStripMenuItem
             // 
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
             this.잘라내기TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.잘라내기TToolStripMenuItem.Text = "잘라내기(&T)";
             // 
             // 복사ToolStripMenuItem
             // 
             this.복사ToolStripMenuItem.Name = "복사ToolStripMenuItem";
             this.복사ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.복사ToolStripMenuItem.Text = "복사";
             this.복사ToolStripMenuItem.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
@@ -275,26 +277,26 @@
             // 
             this.붙여넣기ToolStripMenuItem.Name = "붙여넣기ToolStripMenuItem";
             this.붙여넣기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.붙여넣기ToolStripMenuItem.Text = "붙여넣기";
             this.붙여넣기ToolStripMenuItem.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(174, 6);
             // 
             // 찾기ToolStripMenuItem
             // 
             this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
-            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.찾기ToolStripMenuItem.Text = "찾기";
             this.찾기ToolStripMenuItem.Click += new System.EventHandler(this.BtnFind_Click);
             // 
             // 다음찾기ToolStripMenuItem
             // 
             this.다음찾기ToolStripMenuItem.Name = "다음찾기ToolStripMenuItem";
-            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.다음찾기ToolStripMenuItem.Text = "바꾸기";
             // 
             // 컨트롤CToolStripMenuItem
@@ -324,14 +326,14 @@
             // 정보ToolStripMenuItem
             // 
             this.정보ToolStripMenuItem.Name = "정보ToolStripMenuItem";
-            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.정보ToolStripMenuItem.Text = "정보";
             this.정보ToolStripMenuItem.Click += new System.EventHandler(this.정보ToolStripMenuItem_Click);
             // 
             // 사용방법ToolStripMenuItem
             // 
             this.사용방법ToolStripMenuItem.Name = "사용방법ToolStripMenuItem";
-            this.사용방법ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.사용방법ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.사용방법ToolStripMenuItem.Text = "사용 방법";
             // 
             // panel1
@@ -507,7 +509,7 @@
             this.BtnItalic.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnItalic.FlatAppearance.BorderSize = 0;
             this.BtnItalic.Image = ((System.Drawing.Image)(resources.GetObject("BtnItalic.Image")));
-            this.BtnItalic.Location = new System.Drawing.Point(34, 35);
+            this.BtnItalic.Location = new System.Drawing.Point(34, 60);
             this.BtnItalic.Name = "BtnItalic";
             this.BtnItalic.Size = new System.Drawing.Size(25, 25);
             this.BtnItalic.TabIndex = 16;
@@ -520,7 +522,7 @@
             this.BtnColor.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnColor.FlatAppearance.BorderSize = 0;
             this.BtnColor.Image = ((System.Drawing.Image)(resources.GetObject("BtnColor.Image")));
-            this.BtnColor.Location = new System.Drawing.Point(127, 35);
+            this.BtnColor.Location = new System.Drawing.Point(127, 60);
             this.BtnColor.Name = "BtnColor";
             this.BtnColor.Size = new System.Drawing.Size(25, 25);
             this.BtnColor.TabIndex = 18;
@@ -533,9 +535,9 @@
             this.BtnReduction.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnReduction.FlatAppearance.BorderSize = 0;
             this.BtnReduction.Image = ((System.Drawing.Image)(resources.GetObject("BtnReduction.Image")));
-            this.BtnReduction.Location = new System.Drawing.Point(96, 4);
+            this.BtnReduction.Location = new System.Drawing.Point(152, 27);
             this.BtnReduction.Name = "BtnReduction";
-            this.BtnReduction.Size = new System.Drawing.Size(25, 25);
+            this.BtnReduction.Size = new System.Drawing.Size(25, 26);
             this.BtnReduction.TabIndex = 14;
             this.toolTip1.SetToolTip(this.BtnReduction, "글자 축소");
             this.BtnReduction.UseVisualStyleBackColor = false;
@@ -546,7 +548,7 @@
             this.button18.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(5, 36);
+            this.button18.Location = new System.Drawing.Point(5, 60);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(25, 25);
             this.button18.TabIndex = 19;
@@ -558,7 +560,7 @@
             this.button15.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(67, 36);
+            this.button15.Location = new System.Drawing.Point(67, 60);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(25, 25);
             this.button15.TabIndex = 16;
@@ -570,7 +572,7 @@
             this.button17.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(37, 36);
+            this.button17.Location = new System.Drawing.Point(36, 60);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(25, 25);
             this.button17.TabIndex = 18;
@@ -582,7 +584,7 @@
             this.BtnStrikethrough.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnStrikethrough.FlatAppearance.BorderSize = 0;
             this.BtnStrikethrough.Image = ((System.Drawing.Image)(resources.GetObject("BtnStrikethrough.Image")));
-            this.BtnStrikethrough.Location = new System.Drawing.Point(96, 35);
+            this.BtnStrikethrough.Location = new System.Drawing.Point(96, 60);
             this.BtnStrikethrough.Name = "BtnStrikethrough";
             this.BtnStrikethrough.Size = new System.Drawing.Size(25, 25);
             this.BtnStrikethrough.TabIndex = 17;
@@ -595,7 +597,7 @@
             this.BtnBold.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnBold.FlatAppearance.BorderSize = 0;
             this.BtnBold.Image = ((System.Drawing.Image)(resources.GetObject("BtnBold.Image")));
-            this.BtnBold.Location = new System.Drawing.Point(3, 35);
+            this.BtnBold.Location = new System.Drawing.Point(5, 60);
             this.BtnBold.Name = "BtnBold";
             this.BtnBold.Size = new System.Drawing.Size(25, 25);
             this.BtnBold.TabIndex = 22;
@@ -608,7 +610,7 @@
             this.BtnUnder.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnUnder.FlatAppearance.BorderSize = 0;
             this.BtnUnder.Image = ((System.Drawing.Image)(resources.GetObject("BtnUnder.Image")));
-            this.BtnUnder.Location = new System.Drawing.Point(65, 36);
+            this.BtnUnder.Location = new System.Drawing.Point(65, 60);
             this.BtnUnder.Name = "BtnUnder";
             this.BtnUnder.Size = new System.Drawing.Size(25, 25);
             this.BtnUnder.TabIndex = 24;
@@ -620,11 +622,11 @@
             // 
             this.BtnFont.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnFont.FlatAppearance.BorderSize = 0;
-            this.BtnFont.Location = new System.Drawing.Point(3, 4);
+            this.BtnFont.Location = new System.Drawing.Point(3, 16);
             this.BtnFont.Name = "BtnFont";
             this.BtnFont.Size = new System.Drawing.Size(87, 25);
             this.BtnFont.TabIndex = 24;
-            this.BtnFont.Text = "맑은고딕";
+            this.BtnFont.Text = "굴림";
             this.BtnFont.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolTip1.SetToolTip(this.BtnFont, "글꼴");
             this.BtnFont.UseVisualStyleBackColor = false;
@@ -633,6 +635,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCyan;
+            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.BtnEnlargement);
             this.panel2.Controls.Add(this.button1);
@@ -664,7 +667,7 @@
             this.BtnEnlargement.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnEnlargement.FlatAppearance.BorderSize = 0;
             this.BtnEnlargement.Image = ((System.Drawing.Image)(resources.GetObject("BtnEnlargement.Image")));
-            this.BtnEnlargement.Location = new System.Drawing.Point(127, 4);
+            this.BtnEnlargement.Location = new System.Drawing.Point(152, 3);
             this.BtnEnlargement.Name = "BtnEnlargement";
             this.BtnEnlargement.Size = new System.Drawing.Size(25, 25);
             this.BtnEnlargement.TabIndex = 25;
@@ -677,7 +680,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(158, 35);
+            this.button1.Location = new System.Drawing.Point(158, 60);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(25, 25);
             this.button1.TabIndex = 20;
@@ -814,6 +817,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightCyan;
+            this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.button18);
@@ -840,12 +844,63 @@
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(98, 35);
+            this.button2.Location = new System.Drawing.Point(98, 60);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(27, 26);
             this.button2.TabIndex = 21;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "18",
+            "20",
+            "24",
+            "28",
+            "32",
+            "36",
+            "40",
+            "44",
+            "48",
+            "54",
+            "60",
+            "66",
+            "72",
+            "80",
+            "88",
+            "96"});
+            this.comboBox1.Location = new System.Drawing.Point(90, 18);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(56, 20);
+            this.comboBox1.TabIndex = 35;
+            this.comboBox1.Text = "9";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(36, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(25, 25);
+            this.button3.TabIndex = 35;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -956,6 +1011,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label EditLabel;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
