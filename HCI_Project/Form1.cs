@@ -107,6 +107,8 @@ namespace HCI_Project
             }
             route = null;
             TextEdit.Text = "";
+            temp_data = "새 파일이 생성되었습니다.";
+            f.ChangeLabel(EditLabel, temp_data);
             f.change_Title(false, route);
         }
 
@@ -118,6 +120,8 @@ namespace HCI_Project
             {
                 route = openFileDialog.FileName;
                 TextEdit.Text = f.open_File(openFileDialog.FileName);
+                string[] temp_data = route.Split('\\');
+                f.ChangeLabel(EditLabel, f.StringSummary(temp_data[temp_data.Length - 1], edit_label_num) + " 파일을 불러왔습니다.");
                 f.change_Title(true, route);
             }
         }
