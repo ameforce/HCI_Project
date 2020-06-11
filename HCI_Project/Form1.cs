@@ -337,5 +337,22 @@ namespace HCI_Project
 
             
         }
+
+        private void 시간날짜ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextEdit.SelectedText = DateTime.Now.ToString();
+        }
+
+        private void 자동줄바꿈ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.TextEdit.WordWrap = !(this.TextEdit.WordWrap);
+            this.자동줄바꿈ToolStripMenuItem.Checked = !(this.자동줄바꿈ToolStripMenuItem.Checked);
+           
+        }
+
+        private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
