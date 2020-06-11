@@ -15,8 +15,6 @@ C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\bin\Debug\HCI_Project.exe
 C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\bin\Debug\HCI_Project.pdb
 C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csprojAssemblyReference.cache
 C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Form1.resources
-C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Form2.resources
-C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Form3.resources
 C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
 C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
 C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache

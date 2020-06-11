@@ -56,6 +56,7 @@
             this.사용방법ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fdFont = new System.Windows.Forms.FontDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.EditLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.BtnCut = new System.Windows.Forms.Button();
@@ -103,7 +104,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.EditLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -118,10 +118,9 @@
             this.BtnRerun.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnRerun.FlatAppearance.BorderSize = 0;
             this.BtnRerun.Image = ((System.Drawing.Image)(resources.GetObject("BtnRerun.Image")));
-            this.BtnRerun.Location = new System.Drawing.Point(302, 128);
-            this.BtnRerun.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnRerun.Location = new System.Drawing.Point(264, 86);
             this.BtnRerun.Name = "BtnRerun";
-            this.BtnRerun.Size = new System.Drawing.Size(35, 39);
+            this.BtnRerun.Size = new System.Drawing.Size(31, 31);
             this.BtnRerun.TabIndex = 0;
             this.toolTip1.SetToolTip(this.BtnRerun, "다시실행");
             this.BtnRerun.UseVisualStyleBackColor = false;
@@ -132,10 +131,9 @@
             this.BtnOpen.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnOpen.FlatAppearance.BorderSize = 0;
             this.BtnOpen.Image = ((System.Drawing.Image)(resources.GetObject("BtnOpen.Image")));
-            this.BtnOpen.Location = new System.Drawing.Point(302, 41);
-            this.BtnOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnOpen.Location = new System.Drawing.Point(264, 27);
             this.BtnOpen.Name = "BtnOpen";
-            this.BtnOpen.Size = new System.Drawing.Size(35, 39);
+            this.BtnOpen.Size = new System.Drawing.Size(31, 31);
             this.BtnOpen.TabIndex = 3;
             this.toolTip1.SetToolTip(this.BtnOpen, "불러오기");
             this.BtnOpen.UseVisualStyleBackColor = false;
@@ -146,10 +144,9 @@
             this.BtnPaste.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnPaste.FlatAppearance.BorderSize = 0;
             this.BtnPaste.Image = ((System.Drawing.Image)(resources.GetObject("BtnPaste.Image")));
-            this.BtnPaste.Location = new System.Drawing.Point(79, 10);
-            this.BtnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnPaste.Location = new System.Drawing.Point(69, 8);
             this.BtnPaste.Name = "BtnPaste";
-            this.BtnPaste.Size = new System.Drawing.Size(69, 62);
+            this.BtnPaste.Size = new System.Drawing.Size(60, 50);
             this.BtnPaste.TabIndex = 4;
             this.toolTip1.SetToolTip(this.BtnPaste, "붙여넣기 (Ctrl + V)");
             this.BtnPaste.UseVisualStyleBackColor = false;
@@ -160,10 +157,9 @@
             this.BtnUndo.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnUndo.FlatAppearance.BorderSize = 0;
             this.BtnUndo.Image = ((System.Drawing.Image)(resources.GetObject("BtnUndo.Image")));
-            this.BtnUndo.Location = new System.Drawing.Point(302, 85);
-            this.BtnUndo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnUndo.Location = new System.Drawing.Point(264, 57);
             this.BtnUndo.Name = "BtnUndo";
-            this.BtnUndo.Size = new System.Drawing.Size(35, 39);
+            this.BtnUndo.Size = new System.Drawing.Size(31, 31);
             this.BtnUndo.TabIndex = 5;
             this.toolTip1.SetToolTip(this.BtnUndo, "실행취소");
             this.BtnUndo.UseVisualStyleBackColor = false;
@@ -174,10 +170,9 @@
             this.BtnNewFile.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnNewFile.FlatAppearance.BorderSize = 0;
             this.BtnNewFile.Image = ((System.Drawing.Image)(resources.GetObject("BtnNewFile.Image")));
-            this.BtnNewFile.Location = new System.Drawing.Point(302, 4);
-            this.BtnNewFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnNewFile.Location = new System.Drawing.Point(264, 0);
             this.BtnNewFile.Name = "BtnNewFile";
-            this.BtnNewFile.Size = new System.Drawing.Size(35, 35);
+            this.BtnNewFile.Size = new System.Drawing.Size(31, 28);
             this.BtnNewFile.TabIndex = 7;
             this.toolTip1.SetToolTip(this.BtnNewFile, "새파일");
             this.BtnNewFile.UseVisualStyleBackColor = false;
@@ -195,9 +190,8 @@
             this.도움말ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1026, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(898, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -211,27 +205,27 @@
             this.ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.ToolStripMenuItem.Text = "파일(&F)";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // 새로만들기ToolStripMenuItem
             // 
             this.새로만들기ToolStripMenuItem.Name = "새로만들기ToolStripMenuItem";
-            this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.새로만들기ToolStripMenuItem.Text = "새로만들기";
             // 
             // 열기ToolStripMenuItem
             // 
             this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
-            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.열기ToolStripMenuItem.Text = "열기";
             // 
             // 저장ToolStripMenuItem
             // 
             this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
             this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.저장ToolStripMenuItem.Text = "파일저장";
             this.저장ToolStripMenuItem.Click += new System.EventHandler(this.BtnSave_Click);
             // 
@@ -248,32 +242,32 @@
             this.다음찾기ToolStripMenuItem});
             this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
             this.편집ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // 실행취소ToolStripMenuItem
             // 
             this.실행취소ToolStripMenuItem.Name = "실행취소ToolStripMenuItem";
-            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.실행취소ToolStripMenuItem.Text = "실행취소";
             // 
             // 잘라내기TToolStripMenuItem
             // 
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
             this.잘라내기TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.잘라내기TToolStripMenuItem.Text = "잘라내기(&T)";
             // 
             // 복사ToolStripMenuItem
             // 
             this.복사ToolStripMenuItem.Name = "복사ToolStripMenuItem";
             this.복사ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.복사ToolStripMenuItem.Text = "복사";
             this.복사ToolStripMenuItem.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
@@ -281,26 +275,26 @@
             // 
             this.붙여넣기ToolStripMenuItem.Name = "붙여넣기ToolStripMenuItem";
             this.붙여넣기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.붙여넣기ToolStripMenuItem.Text = "붙여넣기";
             this.붙여넣기ToolStripMenuItem.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // 찾기ToolStripMenuItem
             // 
             this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
-            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.찾기ToolStripMenuItem.Text = "찾기";
             this.찾기ToolStripMenuItem.Click += new System.EventHandler(this.BtnFind_Click);
             // 
             // 다음찾기ToolStripMenuItem
             // 
             this.다음찾기ToolStripMenuItem.Name = "다음찾기ToolStripMenuItem";
-            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.다음찾기ToolStripMenuItem.Text = "바꾸기";
             // 
             // 컨트롤CToolStripMenuItem
@@ -308,14 +302,14 @@
             this.컨트롤CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1});
             this.컨트롤CToolStripMenuItem.Name = "컨트롤CToolStripMenuItem";
-            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
+            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.컨트롤CToolStripMenuItem.Text = "서식(&O)";
             this.컨트롤CToolStripMenuItem.Click += new System.EventHandler(this.컨트롤CToolStripMenuItem_Click);
             // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 31);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox1.Text = "글꼴";
             // 
             // 도움말ToolStripMenuItem
@@ -324,20 +318,20 @@
             this.정보ToolStripMenuItem,
             this.사용방법ToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.도움말ToolStripMenuItem.Text = "도움말(&H)";
             // 
             // 정보ToolStripMenuItem
             // 
             this.정보ToolStripMenuItem.Name = "정보ToolStripMenuItem";
-            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.정보ToolStripMenuItem.Text = "정보";
             this.정보ToolStripMenuItem.Click += new System.EventHandler(this.정보ToolStripMenuItem_Click);
             // 
             // 사용방법ToolStripMenuItem
             // 
             this.사용방법ToolStripMenuItem.Name = "사용방법ToolStripMenuItem";
-            this.사용방법ToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.사용방법ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.사용방법ToolStripMenuItem.Text = "사용 방법";
             // 
             // panel1
@@ -361,19 +355,28 @@
             this.panel1.Controls.Add(this.BtnUndo);
             this.panel1.Controls.Add(this.BtnOpen);
             this.panel1.Controls.Add(this.BtnNewFile);
-            this.panel1.Location = new System.Drawing.Point(0, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(418, 170);
+            this.panel1.Size = new System.Drawing.Size(366, 136);
             this.panel1.TabIndex = 21;
+            // 
+            // EditLabel
+            // 
+            this.EditLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.EditLabel.Location = new System.Drawing.Point(5, 82);
+            this.EditLabel.Name = "EditLabel";
+            this.EditLabel.Size = new System.Drawing.Size(253, 18);
+            this.EditLabel.TabIndex = 31;
+            this.EditLabel.Text = "No DATA";
+            this.EditLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label7.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label7.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(115, 136);
+            this.label7.Location = new System.Drawing.Point(0, 116);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 22);
+            this.label7.Size = new System.Drawing.Size(366, 18);
             this.label7.TabIndex = 30;
             this.label7.Text = "편집";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,9 +384,9 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(344, 8);
+            this.label11.Location = new System.Drawing.Point(301, 5);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 22);
+            this.label11.Size = new System.Drawing.Size(60, 18);
             this.label11.TabIndex = 29;
             this.label11.Text = "새 파일";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -394,10 +397,9 @@
             this.BtnCut.Enabled = false;
             this.BtnCut.FlatAppearance.BorderSize = 0;
             this.BtnCut.Image = ((System.Drawing.Image)(resources.GetObject("BtnCut.Image")));
-            this.BtnCut.Location = new System.Drawing.Point(226, 10);
-            this.BtnCut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCut.Location = new System.Drawing.Point(198, 8);
             this.BtnCut.Name = "BtnCut";
-            this.BtnCut.Size = new System.Drawing.Size(69, 62);
+            this.BtnCut.Size = new System.Drawing.Size(60, 50);
             this.BtnCut.TabIndex = 28;
             this.toolTip1.SetToolTip(this.BtnCut, "오려두기 (Ctrl + X)");
             this.BtnCut.UseVisualStyleBackColor = false;
@@ -406,9 +408,9 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label10.Location = new System.Drawing.Point(226, 80);
+            this.label10.Location = new System.Drawing.Point(198, 64);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 22);
+            this.label10.Size = new System.Drawing.Size(60, 18);
             this.label10.TabIndex = 27;
             this.label10.Text = "잘라내기";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -419,10 +421,9 @@
             this.BtnCopy.Enabled = false;
             this.BtnCopy.FlatAppearance.BorderSize = 0;
             this.BtnCopy.Image = ((System.Drawing.Image)(resources.GetObject("BtnCopy.Image")));
-            this.BtnCopy.Location = new System.Drawing.Point(151, 10);
-            this.BtnCopy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCopy.Location = new System.Drawing.Point(132, 8);
             this.BtnCopy.Name = "BtnCopy";
-            this.BtnCopy.Size = new System.Drawing.Size(69, 62);
+            this.BtnCopy.Size = new System.Drawing.Size(60, 50);
             this.BtnCopy.TabIndex = 26;
             this.toolTip1.SetToolTip(this.BtnCopy, "복사하기 (Ctrl + C)");
             this.BtnCopy.UseVisualStyleBackColor = false;
@@ -431,9 +432,9 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(79, 79);
+            this.label6.Location = new System.Drawing.Point(69, 63);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 22);
+            this.label6.Size = new System.Drawing.Size(60, 18);
             this.label6.TabIndex = 25;
             this.label6.Text = "붙여넣기";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -441,9 +442,9 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(344, 138);
+            this.label5.Location = new System.Drawing.Point(301, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 22);
+            this.label5.Size = new System.Drawing.Size(60, 18);
             this.label5.TabIndex = 24;
             this.label5.Text = "다시 실행";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -451,9 +452,9 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(344, 95);
+            this.label4.Location = new System.Drawing.Point(301, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 22);
+            this.label4.Size = new System.Drawing.Size(60, 18);
             this.label4.TabIndex = 23;
             this.label4.Text = "실행 취소";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -461,9 +462,9 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(344, 50);
+            this.label3.Location = new System.Drawing.Point(301, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 22);
+            this.label3.Size = new System.Drawing.Size(60, 17);
             this.label3.TabIndex = 22;
             this.label3.Text = "불러오기";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -471,9 +472,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(151, 80);
+            this.label2.Location = new System.Drawing.Point(132, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 22);
+            this.label2.Size = new System.Drawing.Size(60, 18);
             this.label2.TabIndex = 21;
             this.label2.Text = "복사하기";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -481,9 +482,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(6, 79);
+            this.label1.Location = new System.Drawing.Point(5, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 22);
+            this.label1.Size = new System.Drawing.Size(60, 18);
             this.label1.TabIndex = 20;
             this.label1.Text = "파일저장";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -492,10 +493,9 @@
             // 
             this.BtnSave.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.Image")));
-            this.BtnSave.Location = new System.Drawing.Point(6, 10);
-            this.BtnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnSave.Location = new System.Drawing.Point(5, 8);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(69, 62);
+            this.BtnSave.Size = new System.Drawing.Size(60, 50);
             this.BtnSave.TabIndex = 1;
             this.BtnSave.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.toolTip1.SetToolTip(this.BtnSave, "파일저장 (Ctrl + S)");
@@ -507,10 +507,9 @@
             this.BtnItalic.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnItalic.FlatAppearance.BorderSize = 0;
             this.BtnItalic.Image = ((System.Drawing.Image)(resources.GetObject("BtnItalic.Image")));
-            this.BtnItalic.Location = new System.Drawing.Point(39, 44);
-            this.BtnItalic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnItalic.Location = new System.Drawing.Point(34, 35);
             this.BtnItalic.Name = "BtnItalic";
-            this.BtnItalic.Size = new System.Drawing.Size(29, 31);
+            this.BtnItalic.Size = new System.Drawing.Size(25, 25);
             this.BtnItalic.TabIndex = 16;
             this.toolTip1.SetToolTip(this.BtnItalic, "글자 기울게");
             this.BtnItalic.UseVisualStyleBackColor = false;
@@ -521,10 +520,9 @@
             this.BtnColor.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnColor.FlatAppearance.BorderSize = 0;
             this.BtnColor.Image = ((System.Drawing.Image)(resources.GetObject("BtnColor.Image")));
-            this.BtnColor.Location = new System.Drawing.Point(145, 44);
-            this.BtnColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnColor.Location = new System.Drawing.Point(127, 35);
             this.BtnColor.Name = "BtnColor";
-            this.BtnColor.Size = new System.Drawing.Size(29, 31);
+            this.BtnColor.Size = new System.Drawing.Size(25, 25);
             this.BtnColor.TabIndex = 18;
             this.toolTip1.SetToolTip(this.BtnColor, "글자 색");
             this.BtnColor.UseVisualStyleBackColor = false;
@@ -535,10 +533,9 @@
             this.BtnReduction.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnReduction.FlatAppearance.BorderSize = 0;
             this.BtnReduction.Image = ((System.Drawing.Image)(resources.GetObject("BtnReduction.Image")));
-            this.BtnReduction.Location = new System.Drawing.Point(110, 5);
-            this.BtnReduction.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnReduction.Location = new System.Drawing.Point(96, 4);
             this.BtnReduction.Name = "BtnReduction";
-            this.BtnReduction.Size = new System.Drawing.Size(29, 31);
+            this.BtnReduction.Size = new System.Drawing.Size(25, 25);
             this.BtnReduction.TabIndex = 14;
             this.toolTip1.SetToolTip(this.BtnReduction, "글자 축소");
             this.BtnReduction.UseVisualStyleBackColor = false;
@@ -549,10 +546,9 @@
             this.button18.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(6, 45);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button18.Location = new System.Drawing.Point(5, 36);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(29, 31);
+            this.button18.Size = new System.Drawing.Size(25, 25);
             this.button18.TabIndex = 19;
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button18_Click);
@@ -562,10 +558,9 @@
             this.button15.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(77, 45);
-            this.button15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button15.Location = new System.Drawing.Point(67, 36);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(29, 31);
+            this.button15.Size = new System.Drawing.Size(25, 25);
             this.button15.TabIndex = 16;
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click);
@@ -575,10 +570,9 @@
             this.button17.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(42, 45);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button17.Location = new System.Drawing.Point(37, 36);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(29, 31);
+            this.button17.Size = new System.Drawing.Size(25, 25);
             this.button17.TabIndex = 18;
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
@@ -588,10 +582,9 @@
             this.BtnStrikethrough.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnStrikethrough.FlatAppearance.BorderSize = 0;
             this.BtnStrikethrough.Image = ((System.Drawing.Image)(resources.GetObject("BtnStrikethrough.Image")));
-            this.BtnStrikethrough.Location = new System.Drawing.Point(110, 44);
-            this.BtnStrikethrough.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnStrikethrough.Location = new System.Drawing.Point(96, 35);
             this.BtnStrikethrough.Name = "BtnStrikethrough";
-            this.BtnStrikethrough.Size = new System.Drawing.Size(29, 31);
+            this.BtnStrikethrough.Size = new System.Drawing.Size(25, 25);
             this.BtnStrikethrough.TabIndex = 17;
             this.toolTip1.SetToolTip(this.BtnStrikethrough, "글자 취소선");
             this.BtnStrikethrough.UseVisualStyleBackColor = false;
@@ -602,10 +595,9 @@
             this.BtnBold.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnBold.FlatAppearance.BorderSize = 0;
             this.BtnBold.Image = ((System.Drawing.Image)(resources.GetObject("BtnBold.Image")));
-            this.BtnBold.Location = new System.Drawing.Point(3, 44);
-            this.BtnBold.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnBold.Location = new System.Drawing.Point(3, 35);
             this.BtnBold.Name = "BtnBold";
-            this.BtnBold.Size = new System.Drawing.Size(29, 31);
+            this.BtnBold.Size = new System.Drawing.Size(25, 25);
             this.BtnBold.TabIndex = 22;
             this.toolTip1.SetToolTip(this.BtnBold, "글자 굵게");
             this.BtnBold.UseVisualStyleBackColor = false;
@@ -616,10 +608,9 @@
             this.BtnUnder.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnUnder.FlatAppearance.BorderSize = 0;
             this.BtnUnder.Image = ((System.Drawing.Image)(resources.GetObject("BtnUnder.Image")));
-            this.BtnUnder.Location = new System.Drawing.Point(74, 45);
-            this.BtnUnder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnUnder.Location = new System.Drawing.Point(65, 36);
             this.BtnUnder.Name = "BtnUnder";
-            this.BtnUnder.Size = new System.Drawing.Size(29, 31);
+            this.BtnUnder.Size = new System.Drawing.Size(25, 25);
             this.BtnUnder.TabIndex = 24;
             this.toolTip1.SetToolTip(this.BtnUnder, "글자 밑줄");
             this.BtnUnder.UseVisualStyleBackColor = false;
@@ -629,10 +620,9 @@
             // 
             this.BtnFont.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnFont.FlatAppearance.BorderSize = 0;
-            this.BtnFont.Location = new System.Drawing.Point(3, 5);
-            this.BtnFont.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFont.Location = new System.Drawing.Point(3, 4);
             this.BtnFont.Name = "BtnFont";
-            this.BtnFont.Size = new System.Drawing.Size(99, 31);
+            this.BtnFont.Size = new System.Drawing.Size(87, 25);
             this.BtnFont.TabIndex = 24;
             this.BtnFont.Text = "맑은고딕";
             this.BtnFont.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -653,19 +643,18 @@
             this.panel2.Controls.Add(this.BtnFont);
             this.panel2.Controls.Add(this.BtnUnder);
             this.panel2.Controls.Add(this.BtnBold);
-            this.panel2.Location = new System.Drawing.Point(419, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(367, 25);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 171);
+            this.panel2.Size = new System.Drawing.Size(189, 137);
             this.panel2.TabIndex = 24;
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label8.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label8.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(71, 134);
+            this.label8.Location = new System.Drawing.Point(0, 116);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 22);
+            this.label8.Size = new System.Drawing.Size(189, 18);
             this.label8.TabIndex = 34;
             this.label8.Text = "글꼴";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -675,10 +664,9 @@
             this.BtnEnlargement.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnEnlargement.FlatAppearance.BorderSize = 0;
             this.BtnEnlargement.Image = ((System.Drawing.Image)(resources.GetObject("BtnEnlargement.Image")));
-            this.BtnEnlargement.Location = new System.Drawing.Point(145, 5);
-            this.BtnEnlargement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnEnlargement.Location = new System.Drawing.Point(127, 4);
             this.BtnEnlargement.Name = "BtnEnlargement";
-            this.BtnEnlargement.Size = new System.Drawing.Size(29, 31);
+            this.BtnEnlargement.Size = new System.Drawing.Size(25, 25);
             this.BtnEnlargement.TabIndex = 25;
             this.toolTip1.SetToolTip(this.BtnEnlargement, "글자 확대");
             this.BtnEnlargement.UseVisualStyleBackColor = false;
@@ -689,10 +677,9 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(181, 44);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(158, 35);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 31);
+            this.button1.Size = new System.Drawing.Size(25, 25);
             this.button1.TabIndex = 20;
             this.toolTip1.SetToolTip(this.button1, "형광펜");
             this.button1.UseVisualStyleBackColor = false;
@@ -707,10 +694,9 @@
             this.BtnFind.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnFind.FlatAppearance.BorderSize = 0;
             this.BtnFind.Image = ((System.Drawing.Image)(resources.GetObject("BtnFind.Image")));
-            this.BtnFind.Location = new System.Drawing.Point(11, 4);
-            this.BtnFind.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFind.Location = new System.Drawing.Point(10, 3);
             this.BtnFind.Name = "BtnFind";
-            this.BtnFind.Size = new System.Drawing.Size(47, 46);
+            this.BtnFind.Size = new System.Drawing.Size(41, 37);
             this.BtnFind.TabIndex = 4;
             this.toolTip1.SetToolTip(this.BtnFind, "찾기");
             this.BtnFind.UseVisualStyleBackColor = false;
@@ -721,10 +707,9 @@
             this.BtnFindAndChange.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnFindAndChange.FlatAppearance.BorderSize = 0;
             this.BtnFindAndChange.Image = ((System.Drawing.Image)(resources.GetObject("BtnFindAndChange.Image")));
-            this.BtnFindAndChange.Location = new System.Drawing.Point(13, 58);
-            this.BtnFindAndChange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFindAndChange.Location = new System.Drawing.Point(11, 46);
             this.BtnFindAndChange.Name = "BtnFindAndChange";
-            this.BtnFindAndChange.Size = new System.Drawing.Size(46, 45);
+            this.BtnFindAndChange.Size = new System.Drawing.Size(40, 36);
             this.BtnFindAndChange.TabIndex = 5;
             this.toolTip1.SetToolTip(this.BtnFindAndChange, "바꾸기");
             this.BtnFindAndChange.UseVisualStyleBackColor = false;
@@ -732,12 +717,11 @@
             // 
             // Search
             // 
-            this.Search.Location = new System.Drawing.Point(705, 4);
-            this.Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Search.Location = new System.Drawing.Point(617, 3);
             this.Search.Multiline = true;
             this.Search.Name = "Search";
             this.Search.ReadOnly = true;
-            this.Search.Size = new System.Drawing.Size(167, 24);
+            this.Search.Size = new System.Drawing.Size(147, 20);
             this.Search.TabIndex = 25;
             this.Search.Text = "검색";
             this.Search.TextChanged += new System.EventHandler(this.Search_TextChanged);
@@ -754,11 +738,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TextEdit.Location = new System.Drawing.Point(0, 199);
-            this.TextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextEdit.Location = new System.Drawing.Point(0, 159);
             this.TextEdit.Name = "TextEdit";
             this.TextEdit.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
-            this.TextEdit.Size = new System.Drawing.Size(1020, 499);
+            this.TextEdit.Size = new System.Drawing.Size(893, 400);
             this.TextEdit.TabIndex = 26;
             this.TextEdit.Text = "";
             this.TextEdit.SelectionChanged += new System.EventHandler(this.TextEdit_SelectionChanged);
@@ -767,8 +750,7 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
             this.panel3.Controls.Add(this.label14);
@@ -776,19 +758,20 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.BtnFindAndChange);
             this.panel3.Controls.Add(this.BtnFind);
-            this.panel3.Location = new System.Drawing.Point(811, 32);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(709, 25);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(210, 166);
+            this.panel3.Size = new System.Drawing.Size(184, 137);
             this.panel3.TabIndex = 29;
             // 
             // label14
             // 
-            this.label14.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label14.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(78, 138);
+            this.label14.Location = new System.Drawing.Point(0, 116);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 22);
+            this.label14.Size = new System.Drawing.Size(184, 18);
             this.label14.TabIndex = 34;
             this.label14.Text = "도구";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -796,9 +779,9 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.Location = new System.Drawing.Point(65, 69);
+            this.label13.Location = new System.Drawing.Point(57, 55);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 22);
+            this.label13.Size = new System.Drawing.Size(60, 18);
             this.label13.TabIndex = 31;
             this.label13.Text = "바꾸기";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -806,9 +789,9 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label12.Location = new System.Drawing.Point(65, 20);
+            this.label12.Location = new System.Drawing.Point(57, 16);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 22);
+            this.label12.Size = new System.Drawing.Size(60, 18);
             this.label12.TabIndex = 30;
             this.label12.Text = "찾기";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -822,9 +805,9 @@
             // SearchStatus
             // 
             this.SearchStatus.AutoSize = true;
-            this.SearchStatus.Location = new System.Drawing.Point(880, 6);
+            this.SearchStatus.Location = new System.Drawing.Point(770, 5);
             this.SearchStatus.Name = "SearchStatus";
-            this.SearchStatus.Size = new System.Drawing.Size(73, 15);
+            this.SearchStatus.Size = new System.Drawing.Size(61, 12);
             this.SearchStatus.TabIndex = 31;
             this.SearchStatus.Text = "| No_data";
             // 
@@ -836,19 +819,18 @@
             this.panel4.Controls.Add(this.button18);
             this.panel4.Controls.Add(this.button15);
             this.panel4.Controls.Add(this.button17);
-            this.panel4.Location = new System.Drawing.Point(637, 32);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel4.Location = new System.Drawing.Point(557, 25);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(173, 166);
+            this.panel4.Size = new System.Drawing.Size(151, 134);
             this.panel4.TabIndex = 32;
             // 
             // label9
             // 
-            this.label9.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label9.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label9.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(56, 138);
+            this.label9.Location = new System.Drawing.Point(0, 116);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 22);
+            this.label9.Size = new System.Drawing.Size(151, 18);
             this.label9.TabIndex = 34;
             this.label9.Text = "단락";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -858,30 +840,19 @@
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(123, 45);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(98, 35);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 32);
+            this.button2.Size = new System.Drawing.Size(27, 26);
             this.button2.TabIndex = 21;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // EditLabel
-            // 
-            this.EditLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.EditLabel.Location = new System.Drawing.Point(6, 102);
-            this.EditLabel.Name = "EditLabel";
-            this.EditLabel.Size = new System.Drawing.Size(289, 23);
-            this.EditLabel.TabIndex = 31;
-            this.EditLabel.Text = "No DATA";
-            this.EditLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(1026, 714);
+            this.ClientSize = new System.Drawing.Size(898, 571);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.SearchStatus);
             this.Controls.Add(this.TextEdit);
@@ -893,7 +864,6 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "TEXT EDITOR";
             this.Load += new System.EventHandler(this.Form1_Load);
