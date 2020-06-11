@@ -86,6 +86,7 @@
             this.fdcolor = new System.Windows.Forms.ColorDialog();
             this.BtnFont = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.FontLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.BtnEnlargement = new System.Windows.Forms.Button();
@@ -100,6 +101,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TextEdit = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -108,11 +110,9 @@
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.SearchStatus = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.ParagraphLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.FontLabel = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ParagraphLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -206,7 +206,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1026, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1026, 28);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -222,7 +222,7 @@
             this.ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.ToolStripMenuItem.Text = "파일(&F)";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
@@ -278,33 +278,35 @@
             this.시간날짜ToolStripMenuItem});
             this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
             this.편집ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
             // 
             // 실행취소ToolStripMenuItem
             // 
             this.실행취소ToolStripMenuItem.Name = "실행취소ToolStripMenuItem";
             this.실행취소ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.실행취소ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.실행취소ToolStripMenuItem.Text = "실행취소";
+            this.실행취소ToolStripMenuItem.Click += new System.EventHandler(this.실행취소ToolStripMenuItem_Click);
             // 
             // 잘라내기TToolStripMenuItem
             // 
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
             this.잘라내기TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.잘라내기TToolStripMenuItem.Text = "잘라내기(&T)";
+            this.잘라내기TToolStripMenuItem.Click += new System.EventHandler(this.잘라내기TToolStripMenuItem_Click);
             // 
             // 복사ToolStripMenuItem
             // 
             this.복사ToolStripMenuItem.Name = "복사ToolStripMenuItem";
             this.복사ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.복사ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.복사ToolStripMenuItem.Text = "복사";
             this.복사ToolStripMenuItem.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
@@ -312,20 +314,20 @@
             // 
             this.붙여넣기ToolStripMenuItem.Name = "붙여넣기ToolStripMenuItem";
             this.붙여넣기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.붙여넣기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.붙여넣기ToolStripMenuItem.Text = "붙여넣기";
             this.붙여넣기ToolStripMenuItem.Click += new System.EventHandler(this.BtnPaste_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // 찾기ToolStripMenuItem
             // 
             this.찾기ToolStripMenuItem.Name = "찾기ToolStripMenuItem";
             this.찾기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.찾기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.찾기ToolStripMenuItem.Text = "찾기";
             this.찾기ToolStripMenuItem.Click += new System.EventHandler(this.BtnFind_Click);
             // 
@@ -333,19 +335,19 @@
             // 
             this.다음찾기ToolStripMenuItem.Name = "다음찾기ToolStripMenuItem";
             this.다음찾기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.다음찾기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.다음찾기ToolStripMenuItem.Text = "바꾸기";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(207, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // 시간날짜ToolStripMenuItem
             // 
             this.시간날짜ToolStripMenuItem.Name = "시간날짜ToolStripMenuItem";
             this.시간날짜ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.시간날짜ToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
+            this.시간날짜ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.시간날짜ToolStripMenuItem.Text = "시간/날짜";
             this.시간날짜ToolStripMenuItem.Click += new System.EventHandler(this.시간날짜ToolStripMenuItem_Click);
             // 
@@ -355,15 +357,16 @@
             this.글꼴ToolStripMenuItem,
             this.자동줄바꿈ToolStripMenuItem});
             this.컨트롤CToolStripMenuItem.Name = "컨트롤CToolStripMenuItem";
-            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(69, 26);
+            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.컨트롤CToolStripMenuItem.Text = "서식(&U)";
             this.컨트롤CToolStripMenuItem.Click += new System.EventHandler(this.컨트롤CToolStripMenuItem_Click);
             // 
             // 글꼴ToolStripMenuItem
             // 
             this.글꼴ToolStripMenuItem.Name = "글꼴ToolStripMenuItem";
-            this.글꼴ToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.글꼴ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.글꼴ToolStripMenuItem.Text = "글꼴";
+            this.글꼴ToolStripMenuItem.Click += new System.EventHandler(this.글꼴ToolStripMenuItem_Click);
             // 
             // 자동줄바꿈ToolStripMenuItem
             // 
@@ -378,7 +381,7 @@
             this.정보ToolStripMenuItem,
             this.사용방법ToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.도움말ToolStripMenuItem.Text = "도움말(&H)";
             // 
             // 정보ToolStripMenuItem
@@ -463,7 +466,7 @@
             this.BtnCut.Name = "BtnCut";
             this.BtnCut.Size = new System.Drawing.Size(69, 62);
             this.BtnCut.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.BtnCut, "오려두기 (Ctrl + X)");
+            this.toolTip1.SetToolTip(this.BtnCut, "잘라내기 (Ctrl + X)");
             this.BtnCut.UseVisualStyleBackColor = false;
             this.BtnCut.Click += new System.EventHandler(this.BtnCut_Click);
             // 
@@ -725,6 +728,16 @@
             this.panel2.Size = new System.Drawing.Size(216, 171);
             this.panel2.TabIndex = 24;
             // 
+            // FontLabel
+            // 
+            this.FontLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FontLabel.Location = new System.Drawing.Point(5, 102);
+            this.FontLabel.Name = "FontLabel";
+            this.FontLabel.Size = new System.Drawing.Size(207, 22);
+            this.FontLabel.TabIndex = 32;
+            this.FontLabel.Text = "No DATA";
+            this.FontLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -889,6 +902,16 @@
             this.panel3.Size = new System.Drawing.Size(210, 171);
             this.panel3.TabIndex = 29;
             // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label15.Location = new System.Drawing.Point(-173, 102);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(167, 22);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "No DATA";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -952,6 +975,16 @@
             this.panel4.Size = new System.Drawing.Size(173, 168);
             this.panel4.TabIndex = 32;
             // 
+            // ParagraphLabel
+            // 
+            this.ParagraphLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ParagraphLabel.Location = new System.Drawing.Point(4, 102);
+            this.ParagraphLabel.Name = "ParagraphLabel";
+            this.ParagraphLabel.Size = new System.Drawing.Size(163, 22);
+            this.ParagraphLabel.TabIndex = 36;
+            this.ParagraphLabel.Text = "No DATA";
+            this.ParagraphLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.PaleTurquoise;
@@ -975,36 +1008,6 @@
             this.button2.TabIndex = 21;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // FontLabel
-            // 
-            this.FontLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.FontLabel.Location = new System.Drawing.Point(5, 102);
-            this.FontLabel.Name = "FontLabel";
-            this.FontLabel.Size = new System.Drawing.Size(207, 22);
-            this.FontLabel.TabIndex = 32;
-            this.FontLabel.Text = "No DATA";
-            this.FontLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label15.Location = new System.Drawing.Point(-173, 102);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(167, 22);
-            this.label15.TabIndex = 36;
-            this.label15.Text = "No DATA";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ParagraphLabel
-            // 
-            this.ParagraphLabel.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ParagraphLabel.Location = new System.Drawing.Point(4, 102);
-            this.ParagraphLabel.Name = "ParagraphLabel";
-            this.ParagraphLabel.Size = new System.Drawing.Size(163, 22);
-            this.ParagraphLabel.TabIndex = 36;
-            this.ParagraphLabel.Text = "No DATA";
-            this.ParagraphLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 

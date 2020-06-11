@@ -75,7 +75,7 @@ namespace HCI_Project
             f.ChangeLabel(EditLabel, temp_data);
         }
 
-        //오려두기
+        //잘라내기
         private void BtnCut_Click(object sender, EventArgs e) {
             TextEdit.Cut();
             string temp_data = Clipboard.GetText();
@@ -343,6 +343,34 @@ namespace HCI_Project
         private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        
+        //상위메뉴바 실행취소
+        private void 실행취소ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextEdit.Undo();
+            f.ChangeLabel(EditLabel, "실행 취소되었습니다.");
+        }
+
+        //상위메뉴바 잘라내기
+        private void 잘라내기TToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextEdit.Cut();
+
+            string temp_data = Clipboard.GetText();
+            temp_data = f.StringSummary(temp_data, edit_label_num) + "가 오려졌습니다.";
+            f.ChangeLabel(EditLabel, temp_data);
+
+        }
+        //상위메뉴바 글꼴
+
+        private void 글꼴ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = this.fdFont.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                TextEdit.Font = fdFont.Font;
+            }
         }
     }
 }
