@@ -19,9 +19,11 @@ namespace HCI_Project
         private string route = null;
         private string status = null;
         private int edit_label_num = 8;
+        private int default_font_size;
         public Form1()
         {
             InitializeComponent();
+            default_font_size = (int)TextEdit.SelectionFont.Size;
         }
 
 
@@ -39,6 +41,7 @@ namespace HCI_Project
         }
         
         //#######################Button Function############################
+        //$$$$$$$$$$$$$$편집 영역$$$$$$$$$$$$$$$
         //파일저장
         private void BtnSave_Click(object sender, EventArgs e)
         {
@@ -127,11 +130,19 @@ namespace HCI_Project
         }
 
         //실행취소
-        private void BtnUndo_Click(object sender, EventArgs e) { TextEdit.Undo(); }
+        private void BtnUndo_Click(object sender, EventArgs e)
+        {
+            TextEdit.Undo();
+            f.ChangeLabel(EditLabel, "실행 취소되었습니다.");
+        }
 
         //다시 실행
-        private void BtnRerun_Click(object sender, EventArgs e) { TextEdit.Redo(); }
+        private void BtnRerun_Click(object sender, EventArgs e) {
+            TextEdit.Redo();
+            f.ChangeLabel(EditLabel, "다시 실행되었습니다.");
+        }
 
+        //$$$$$$$$$$$$$$글꼴 영역$$$$$$$$$$$$$$$
         //폰트
         private void BtnFont_Click(object sender, EventArgs e)
         {
@@ -175,7 +186,8 @@ namespace HCI_Project
         //글자 축소
         private void BtnReduction_Click(object sender, EventArgs e)
         {
-            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, TextEdit.SelectionFont.Size - 1,
+            default_font_size--;
+            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size,
                 TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
             comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
         }
