@@ -173,6 +173,7 @@ namespace HCI_Project
         {
             TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, TextEdit.SelectionFont.Size - 1,
                 TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+            comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
         }
 
         //글자 확대
@@ -180,6 +181,7 @@ namespace HCI_Project
         {
             TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily,TextEdit.SelectionFont.Size + 1,
                 TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+            comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
         }
         
         //굵게
