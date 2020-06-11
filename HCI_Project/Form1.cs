@@ -19,6 +19,7 @@ namespace HCI_Project
         private string route = null;
         private string status = null;
         private int edit_label_num = 8;
+        private int font_label_num = 4;
         private int default_font_size;
         public Form1()
         {
@@ -150,6 +151,8 @@ namespace HCI_Project
             if (dr == DialogResult.OK)
             {
                 TextEdit.Font = fdFont.Font;
+                BtnFont.Text = fdFont.Font.Name;
+                f.ChangeLabel(FontLabel, f.StringSummary(fdFont.Font.Name, font_label_num) + " 글꼴 적용 완료");
             }
         }
 
@@ -157,55 +160,57 @@ namespace HCI_Project
         private void BtnHighlight_Click(object sender, EventArgs e)
         {
             f.SelectBackColor(TextEdit, this);
+            f.ChangeLabel(FontLabel, "형광펜 적용 완료");
         }
 
         //글자 축소
         private void BtnReduction_Click(object sender, EventArgs e)
         {
             default_font_size--;
-            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size,
-                TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size, TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
             comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
+            f.ChangeLabel(FontLabel, "현재 글자 크기: " + default_font_size);
         }
 
         //글자 확대
         private void BtnEnlargement_Click(object sender, EventArgs e)
         {
-            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily,TextEdit.SelectionFont.Size + 1,
-                TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
+            default_font_size++;
+            TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size,TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
             comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
+            f.ChangeLabel(FontLabel, "현재 글자 크기: " + default_font_size);
         }
         
         //굵게
         private void BtnBold_Click(object sender, EventArgs e)
         {
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.Font, TextEdit.SelectionFont.Style ^ FontStyle.Bold);
-            }
+            TextEdit.SelectionFont = new Font(TextEdit.Font, TextEdit.SelectionFont.Style ^ FontStyle.Bold);
+            if (TextEdit.SelectionFont.Bold) { f.ChangeLabel(FontLabel, "굵은 폰트 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "굵은 폰트 적용 해제"); }
         }
 
         //기울임
         private void BtnItalic_Click(object sender, EventArgs e)
         {
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Italic);
-            }
+            TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Italic);
+            if (TextEdit.SelectionFont.Italic) { f.ChangeLabel(FontLabel, "기울임 폰트 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "기울임 폰트 적용 해제"); }
         }
 
         //밑줄
         private void BtnUnder_Click(object sender, EventArgs e)
         {
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Underline);
-            }
+            TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Underline);
+            if (TextEdit.SelectionFont.Underline) { f.ChangeLabel(FontLabel, "밑줄 폰트 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "밑줄 폰트 적용 해제"); }
         }
 
         //취소선
         private void BtnStrikethrough_Click(object sender, EventArgs e)
         {
-            {
-                TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Strikeout);
-            }
+            TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Strikeout);
+            if (TextEdit.SelectionFont.Strikeout) { f.ChangeLabel(FontLabel, "취소선 폰트 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "취소선 폰트 적용 해제"); }
         }
 
         //폰트색상
