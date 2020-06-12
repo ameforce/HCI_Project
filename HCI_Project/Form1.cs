@@ -156,13 +156,6 @@ namespace HCI_Project
             }
         }
 
-        //형광펜
-        private void BtnHighlight_Click(object sender, EventArgs e)
-        {
-            f.SelectBackColor(TextEdit, this);
-            f.ChangeLabel(FontLabel, "형광펜 적용 완료");
-        }
-
         //글자 축소
         private void BtnReduction_Click(object sender, EventArgs e)
         {
@@ -194,32 +187,32 @@ namespace HCI_Project
         private void BtnBold_Click(object sender, EventArgs e)
         {
             TextEdit.SelectionFont = new Font(TextEdit.Font, TextEdit.SelectionFont.Style ^ FontStyle.Bold);
-            if (TextEdit.SelectionFont.Bold) { f.ChangeLabel(FontLabel, "굵은 폰트 적용 완료"); }
-            else { f.ChangeLabel(FontLabel, "굵은 폰트 적용 해제"); }
+            if (TextEdit.SelectionFont.Bold) { f.ChangeLabel(FontLabel, "글자 굵게 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "글자 굵게 적용 해제"); }
         }
 
         //기울임
         private void BtnItalic_Click(object sender, EventArgs e)
         {
             TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Italic);
-            if (TextEdit.SelectionFont.Italic) { f.ChangeLabel(FontLabel, "기울임 폰트 적용 완료"); }
-            else { f.ChangeLabel(FontLabel, "기울임 폰트 적용 해제"); }
+            if (TextEdit.SelectionFont.Italic) { f.ChangeLabel(FontLabel, "글자 기울임 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "글자 기울임 적용 해제"); }
         }
 
         //밑줄
         private void BtnUnder_Click(object sender, EventArgs e)
         {
             TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Underline);
-            if (TextEdit.SelectionFont.Underline) { f.ChangeLabel(FontLabel, "밑줄 폰트 적용 완료"); }
-            else { f.ChangeLabel(FontLabel, "밑줄 폰트 적용 해제"); }
+            if (TextEdit.SelectionFont.Underline) { f.ChangeLabel(FontLabel, "글자 밑줄 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "글자 밑줄적용 해제"); }
         }
 
         //취소선
         private void BtnStrikethrough_Click(object sender, EventArgs e)
         {
             TextEdit.SelectionFont = new Font(TextEdit.Font,TextEdit.SelectionFont.Style ^ FontStyle.Strikeout);
-            if (TextEdit.SelectionFont.Strikeout) { f.ChangeLabel(FontLabel, "취소선 폰트 적용 완료"); }
-            else { f.ChangeLabel(FontLabel, "취소선 폰트 적용 해제"); }
+            if (TextEdit.SelectionFont.Strikeout) { f.ChangeLabel(FontLabel, "글자 취소선 적용 완료"); }
+            else { f.ChangeLabel(FontLabel, "글자 취소선 적용 해제"); }
         }
 
         //폰트색상
@@ -227,9 +220,44 @@ namespace HCI_Project
         {
             if (fdcolor.ShowDialog() != DialogResult.Cancel)
             {
-                TextEdit.ForeColor = fdcolor.Color;  
+                TextEdit.ForeColor = fdcolor.Color;
+                f.ChangeLabel(FontLabel, "글자 색 적용 완료");
             }
         }
+
+        //형광펜
+        private void BtnHighlight_Click(object sender, EventArgs e)
+        {
+            f.SelectBackColor(TextEdit, this);
+            f.ChangeLabel(FontLabel, "형광펜 적용 완료");
+        }
+
+
+        //$$$$$$$$$$$$$$단락 영역$$$$$$$$$$$$$$$
+        //텍스트 왼쪽 정렬
+        private void button18_Click(object sender, EventArgs e)
+        {
+            TextEdit.Select();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        //텍스트 가운데 정렬
+        private void button17_Click(object sender, EventArgs e)
+        {
+            TextEdit.Select();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        //텍스트 오른쪽 정렬
+        private void button15_Click(object sender, EventArgs e)
+        {
+            TextEdit.Select();
+            TextEdit.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
+
+
+
 
         //찾기
         private void BtnFind_Click(object sender, EventArgs e)
@@ -248,8 +276,9 @@ namespace HCI_Project
             Search.Focus();
             Search.SelectAll();
         }
-        //################################################################
+        //###################################################################
 
+        //#######################Background Function############################
         //
         private void 컨트롤CToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -292,26 +321,7 @@ namespace HCI_Project
         }
 
 
-        //텍스트 오른쪽 정렬
-        private void button15_Click(object sender, EventArgs e)
-        {
-            TextEdit.Select();
-            TextEdit.SelectionAlignment = HorizontalAlignment.Right;
-        }
 
-        //텍스트 왼쪽 정렬
-        private void button18_Click(object sender, EventArgs e)
-        {
-            TextEdit.Select();
-            TextEdit.SelectionAlignment = HorizontalAlignment.Left;
-        }
-
-        //텍스트 가운데 정렬
-        private void button17_Click(object sender, EventArgs e)
-        {
-            TextEdit.Select();
-            TextEdit.SelectionAlignment = HorizontalAlignment.Center;
-        }
 
         //글머리 표
        
@@ -394,7 +404,7 @@ namespace HCI_Project
             Manual aa = new Manual();
             aa.Show();
         }
-
+        //###################################################################
 
     }
 }
