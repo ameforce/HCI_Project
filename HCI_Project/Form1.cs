@@ -168,7 +168,7 @@ namespace HCI_Project
         {
             default_font_size--;
             TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size, TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
-            comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
+            FontSize.Text = TextEdit.SelectionFont.Size.ToString();
             f.ChangeLabel(FontLabel, "현재 글자 크기: " + default_font_size);
             
         }
@@ -178,10 +178,18 @@ namespace HCI_Project
         {
             default_font_size++;
             TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size,TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
-            comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
+            FontSize.Text = TextEdit.SelectionFont.Size.ToString();
             f.ChangeLabel(FontLabel, "현재 글자 크기: " + default_font_size);
         }
-        
+
+        //FontSize 조절
+        private void FontSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            default_font_size = Convert.ToInt32(FontSize.SelectedItem);
+            TextEdit.Font = new Font(TextEdit.Font.FontFamily, default_font_size, TextEdit.Font.Style);
+            f.ChangeLabel(FontLabel, "현재 글자 크기: " + default_font_size);
+        }
+
         //굵게
         private void BtnBold_Click(object sender, EventArgs e)
         {
@@ -322,16 +330,8 @@ namespace HCI_Project
         private void TextEdit_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             //잘라내기 HOTKEY
-            if (e.Control && e.KeyCode == Keys.T){ TextEdit.Cut(); }
+            if (e.Control && e.KeyCode == Keys.X){ TextEdit.Cut(); }
             if (e.Control && e.KeyCode == Keys.Z) { TextEdit.Undo(); }
-        }
-        //콤보박스 글자크기
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-             TextEdit.Font = new Font(TextEdit.Font.FontFamily, Convert.ToInt32(comboBox1.SelectedItem), TextEdit.Font.Style);
-
-            
         }
 
         private void 시간날짜ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -394,5 +394,7 @@ namespace HCI_Project
             Manual aa = new Manual();
             aa.Show();
         }
+
+
     }
 }

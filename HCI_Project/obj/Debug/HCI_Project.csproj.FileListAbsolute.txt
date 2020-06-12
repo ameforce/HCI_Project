@@ -41,3 +41,4 @@ C:\Users\kmj41\Documents\GitHub\HCI_Project\HCI_Project\obj\Debug\HCI_Project.cs
 C:\Users\kmj41\Documents\GitHub\HCI_Project\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
 C:\Users\kmj41\Documents\GitHub\HCI_Project\HCI_Project\obj\Debug\HCI_Project.exe
 C:\Users\kmj41\Documents\GitHub\HCI_Project\HCI_Project\obj\Debug\HCI_Project.pdb
+C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Manual.resources
