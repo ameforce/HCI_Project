@@ -387,5 +387,12 @@ namespace HCI_Project
                 TextEdit.SelectionIndent = 1;
             }
         }
+
+        //도움말-사용방법 폼 연결
+        private void 사용방법ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Manual aa = new Manual();
+            aa.Show();
+        }
     }
 }
