@@ -170,6 +170,7 @@ namespace HCI_Project
             TextEdit.SelectionFont = new Font(TextEdit.SelectionFont.FontFamily, default_font_size, TextEdit.SelectionFont.Bold ? FontStyle.Bold : FontStyle.Regular);
             comboBox1.Text = TextEdit.SelectionFont.Size.ToString();
             f.ChangeLabel(FontLabel, "현재 글자 크기: " + default_font_size);
+            
         }
 
         //글자 확대
@@ -375,6 +376,15 @@ namespace HCI_Project
             if (dr == DialogResult.OK)
             {
                 TextEdit.Font = fdFont.Font;
+            }
+        }
+
+        private void TextEdit_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextEdit.AcceptsTab = true;
+            if (e.KeyCode == Keys.Tab)
+            {
+                TextEdit.SelectionIndent = 1;
             }
         }
     }

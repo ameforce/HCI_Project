@@ -850,11 +850,13 @@
             this.TextEdit.Location = new System.Drawing.Point(0, 159);
             this.TextEdit.Name = "TextEdit";
             this.TextEdit.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
-            this.TextEdit.Size = new System.Drawing.Size(893, 410);
+            this.TextEdit.Size = new System.Drawing.Size(893, 411);
             this.TextEdit.TabIndex = 26;
             this.TextEdit.Text = "";
+            this.TextEdit.WordWrap = false;
             this.TextEdit.SelectionChanged += new System.EventHandler(this.TextEdit_SelectionChanged);
             this.TextEdit.TextChanged += new System.EventHandler(this.TextEdit_TextChanged);
+            this.TextEdit.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextEdit_KeyUp);
             this.TextEdit.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.TextEdit_PreviewKeyDown);
             // 
             // panel3
