@@ -44,11 +44,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label1.Font = new System.Drawing.Font("한컴 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(14, 27);
+            this.label1.Location = new System.Drawing.Point(28, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "메뉴";
+            this.label1.Text = "파일";
             // 
             // label2
             // 
@@ -76,7 +76,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("한컴 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(19, 63);
+            this.label5.Location = new System.Drawing.Point(29, 63);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(308, 228);
             this.label5.TabIndex = 4;
@@ -106,9 +106,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(845, 292);
+            this.pictureBox1.Location = new System.Drawing.Point(834, 265);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 254);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -121,7 +121,7 @@
             this.AutoScrollMargin = new System.Drawing.Size(50, 50);
             this.AutoScrollMinSize = new System.Drawing.Size(50, 50);
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1097, 484);
+            this.ClientSize = new System.Drawing.Size(1166, 570);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -134,6 +134,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Manual";
             this.Text = "사용방법";
+            this.Load += new System.EventHandler(this.Manual_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

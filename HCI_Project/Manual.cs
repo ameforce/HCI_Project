@@ -16,5 +16,10 @@ namespace HCI_Project
         {
             InitializeComponent();
         }
+
+        private void Manual_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
