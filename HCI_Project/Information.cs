@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HCI_Project
 {
-    public partial class Form2 : Form
+    public partial class Information : Form
     {
-        public Form2()
+        public Information()
         {
             InitializeComponent();
         }
