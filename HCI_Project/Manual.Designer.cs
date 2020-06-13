@@ -81,15 +81,15 @@
             this.label5.Size = new System.Drawing.Size(308, 228);
             this.label5.TabIndex = 4;
             this.label5.Text = "새로만들기-문서를 새로 작성할 수 있도록\r\n새로운 파일을 불러옴\r\n(단축키:Ctrl+N)\r\n\r\n열기-기존에 있던 텍스트 파일을 불러올 수 있음\r\n" +
-    "(단축키:Ctrl+O)\r\n\r\n파일저장-파일을 저장\r\n(단축키:Ctrl+S)\r\n\r\n끝내기-문서 편집기 종료\r\n(단축키:Ctrl+X)";
+    "(단축키:Ctrl+O)\r\n\r\n파일저장-파일을 저장\r\n(단축키:Ctrl+S)\r\n\r\n끝내기-문서 편집기 종료\r\n(단축키: Alt+F4)";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("한컴 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(353, 53);
+            this.label6.Location = new System.Drawing.Point(353, 63);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(396, 418);
+            this.label6.Size = new System.Drawing.Size(459, 418);
             this.label6.TabIndex = 5;
             this.label6.Text = resources.GetString("label6.Text");
             // 
@@ -117,10 +117,11 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(50, 50);
             this.AutoScrollMinSize = new System.Drawing.Size(50, 50);
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1097, 475);
+            this.ClientSize = new System.Drawing.Size(1097, 484);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
