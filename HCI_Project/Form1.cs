@@ -49,12 +49,13 @@ namespace HCI_Project
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Function f = new Function();
-                if (f.SaveFile(TextEdit.Text, saveFileDialog.FileName))
+                if (f.SaveFile(TextEdit, TextEdit.Text, saveFileDialog.FileName))
                 {
                     route = saveFileDialog.FileName;
                     string[] temp_data = route.Split('\\');
                     f.ChangeLabel(EditLabel, f.StringSummary(temp_data[temp_data.Length - 1], edit_label_num) + "가 저장되었습니다.");
-                    f.ChangeTitle(f.CheckContent(route, TextEdit.Text), route);
+                    //f.ChangeTitle(f.CheckContent(route, TextEdit.Text), route);
+                    f.ChangeTitle(true, route);
                 }
             }
         }
@@ -122,7 +123,8 @@ namespace HCI_Project
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 route = openFileDialog.FileName;
-                TextEdit.Text = f.OpenFile(openFileDialog.FileName);
+                //TextEdit.Text = f.OpenFile(openFileDialog.FileName);
+                f.OpenFile(TextEdit, route);
                 string[] temp_data = route.Split('\\');
                 f.ChangeLabel(EditLabel, f.StringSummary(temp_data[temp_data.Length - 1], edit_label_num) + " 파일을 불러왔습니다.");
                 f.ChangeTitle(true, route);

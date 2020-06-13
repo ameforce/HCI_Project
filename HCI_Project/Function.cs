@@ -30,9 +30,10 @@ namespace HCI_Project
         }
 
         //파일 저장
-        public Boolean SaveFile(string text, string route)
+        public Boolean SaveFile(RichTextBox rtb, string text, string route)
         {
-            System.IO.File.WriteAllText(route, text, Encoding.Default);
+            rtb.SaveFile(route);
+            //System.IO.File.WriteAllText(route, text, Encoding.Default);
             if (CheckFile(route)) return true;
             else
             {
@@ -43,7 +44,7 @@ namespace HCI_Project
 
         //파일 열기
         public String OpenFile(string route){ return System.IO.File.ReadAllText(route, Encoding.Default); }
-
+        public void OpenFile(RichTextBox rtb, string route) { rtb.LoadFile(route); }
         //프로그램 타이틀에 저장 여부 표시.
         public void ChangeTitle(Boolean TF, string route)
         {
