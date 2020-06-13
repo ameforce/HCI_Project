@@ -255,10 +255,7 @@ namespace HCI_Project
             TextEdit.SelectionAlignment = HorizontalAlignment.Right;
         }
 
-
-
-
-
+        //$$$$$$$$$$$$$$도구 영역$$$$$$$$$$$$$$$
         //찾기
         private void BtnFind_Click(object sender, EventArgs e)
         {
