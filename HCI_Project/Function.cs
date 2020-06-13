@@ -76,11 +76,28 @@ namespace HCI_Project
             return count;
         }
 
-        //텍스트 박스에 붙여넣기
-        public void Paste_Text(RichTextBox rt)
+        //텍스트 찾기 및 바꾸기
+        public int Change_Text(TextBox tb, RichTextBox rt)
         {
-            rt.Paste();
+            rt.SelectionStart = 0;
+            rt.SelectionLength = rt.Text.Length;
+            rt.SelectionColor = Color.Black;
+
+            int start = 0, pos = 0, count = 0, limit_max = rt.Text.Length;
+            while (!(start > limit_max) && pos != -1 && tb.TextLength != 0)
+            {
+                pos = rt.Text.IndexOf(tb.Text, start, StringComparison.CurrentCulture);
+                if (pos == -1) break;
+                start = pos + tb.Text.Length;
+                rt.SelectionStart = pos;
+                rt.SelectionLength = tb.Text.Length;
+                rt.SelectionBackColor = Color.AliceBlue;
+                rt.SelectionColor = Color.Red;
+                count++;
+            }
+            return count;
         }
+
 
         //글자 수 지정 크기만큼 줄이는 함수
         public string StringSummary(string text, int num)

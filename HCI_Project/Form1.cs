@@ -284,6 +284,16 @@ namespace HCI_Project
             Search.Focus();
             Search.SelectAll();
         }
+
+        //Search 내용 변경 시 status에 따라 찾기 및 바꾸기 수행.
+        private void Search_TextChanged(object sender, EventArgs e)
+        {
+            if (status == "Find" || status == "FindAndChange")   //찾기 & 바꾸기
+            {
+                int count = f.Find_Text(Search, TextEdit);
+                SearchStatus.Text = count + "개 찾음";
+            }
+        }
         //###################################################################
 
         //#######################Background Function############################
@@ -307,20 +317,7 @@ namespace HCI_Project
                 f.change_Title(false, route);
         }
 
-        //Search 내용 변경 시 status에 따라 찾기 및 바꾸기 수행.
-        private void Search_TextChanged(object sender, EventArgs e)
-        {
-            if (status == "Find")   //찾기
-            {
-                int count = f.Find_Text(Search, TextEdit);
-                SearchStatus.Text = count + "개 찾음";
-            }
-            else if (status == "FindAndChange") //바꾸기
-            {
-                int count = f.Find_Text(Search, TextEdit);
-                SearchStatus.Text = count + "개 찾음";
-            }
-        }
+
 
 
 
