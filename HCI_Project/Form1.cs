@@ -239,6 +239,7 @@ namespace HCI_Project
         {
             TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Left;
+            f.ChangeLabel(ParagraphLabel, "왼쪽 정렬 완료");
         }
 
         //텍스트 가운데 정렬
@@ -246,6 +247,7 @@ namespace HCI_Project
         {
             TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Center;
+            f.ChangeLabel(ParagraphLabel, "중앙 정렬 완료");
         }
 
         //텍스트 오른쪽 정렬
@@ -253,6 +255,15 @@ namespace HCI_Project
         {
             TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Right;
+            f.ChangeLabel(ParagraphLabel, "오른쪽 정렬 완료");
+        }
+
+        //글머리 표
+        private void BtnBullet_Click(object sender, EventArgs e)
+        {
+            TextEdit.SelectionBullet = !TextEdit.SelectionBullet;
+            if (TextEdit.SelectionBullet) { f.ChangeLabel(ParagraphLabel, "글머리 적용 완료"); }
+            else { f.ChangeLabel(ParagraphLabel, "글머리 적용 해제"); }
         }
 
         //$$$$$$$$$$$$$$도구 영역$$$$$$$$$$$$$$$
@@ -320,12 +331,7 @@ namespace HCI_Project
 
 
 
-        //글머리 표
-       
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            TextEdit.SelectionBullet = true;
-        }
+
 
 
         private void Form1_Load(object sender, EventArgs e)

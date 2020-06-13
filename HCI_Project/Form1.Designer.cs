@@ -109,7 +109,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.ParagraphLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnBullet = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
@@ -961,7 +961,7 @@
             this.panel4.BackColor = System.Drawing.Color.LightCyan;
             this.panel4.Controls.Add(this.ParagraphLabel);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.BtnBullet);
             this.panel4.Controls.Add(this.BtnLeftAlign);
             this.panel4.Controls.Add(this.BtnRightAlign);
             this.panel4.Controls.Add(this.BtnCenterAlign);
@@ -992,18 +992,18 @@
             this.label9.Text = "단락";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // BtnBullet
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(136, 20);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 32);
-            this.button2.TabIndex = 21;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.BtnBullet.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnBullet.FlatAppearance.BorderSize = 0;
+            this.BtnBullet.Image = ((System.Drawing.Image)(resources.GetObject("BtnBullet.Image")));
+            this.BtnBullet.Location = new System.Drawing.Point(136, 20);
+            this.BtnBullet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnBullet.Name = "BtnBullet";
+            this.BtnBullet.Size = new System.Drawing.Size(31, 32);
+            this.BtnBullet.TabIndex = 21;
+            this.BtnBullet.UseVisualStyleBackColor = false;
+            this.BtnBullet.Click += new System.EventHandler(this.BtnBullet_Click);
             // 
             // Form1
             // 
@@ -1106,7 +1106,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button BtnHighlight;
         private System.Windows.Forms.ToolStripMenuItem 사용방법ToolStripMenuItem;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnBullet;
         private System.Windows.Forms.ToolStripMenuItem 실행취소ToolStripMenuItem;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
