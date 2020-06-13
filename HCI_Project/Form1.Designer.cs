@@ -76,9 +76,9 @@
             this.BtnItalic = new System.Windows.Forms.Button();
             this.BtnColor = new System.Windows.Forms.Button();
             this.BtnReduction = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.BtnLeftAlign = new System.Windows.Forms.Button();
+            this.BtnRightAlign = new System.Windows.Forms.Button();
+            this.BtnCenterAlign = new System.Windows.Forms.Button();
             this.BtnStrikethrough = new System.Windows.Forms.Button();
             this.BtnBold = new System.Windows.Forms.Button();
             this.BtnUnder = new System.Windows.Forms.Button();
@@ -205,7 +205,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1026, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1026, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -221,7 +221,7 @@
             this.ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.ToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.ToolStripMenuItem.Text = "파일(&F)";
             this.ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
@@ -276,7 +276,7 @@
             this.시간날짜ToolStripMenuItem});
             this.편집ToolStripMenuItem.Name = "편집ToolStripMenuItem";
             this.편집ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.편집ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.편집ToolStripMenuItem.Text = "편집(&E)";
             // 
             // 실행취소ToolStripMenuItem
@@ -350,7 +350,7 @@
             this.글꼴ToolStripMenuItem,
             this.자동줄바꿈ToolStripMenuItem});
             this.컨트롤CToolStripMenuItem.Name = "컨트롤CToolStripMenuItem";
-            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
+            this.컨트롤CToolStripMenuItem.Size = new System.Drawing.Size(69, 26);
             this.컨트롤CToolStripMenuItem.Text = "서식(&U)";
             this.컨트롤CToolStripMenuItem.Click += new System.EventHandler(this.컨트롤CToolStripMenuItem_Click);
             // 
@@ -374,7 +374,7 @@
             this.정보ToolStripMenuItem,
             this.사용방법ToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 22);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
             this.도움말ToolStripMenuItem.Text = "도움말(&H)";
             // 
             // 정보ToolStripMenuItem
@@ -605,44 +605,44 @@
             this.BtnReduction.UseVisualStyleBackColor = false;
             this.BtnReduction.Click += new System.EventHandler(this.BtnReduction_Click);
             // 
-            // button18
+            // BtnLeftAlign
             // 
-            this.button18.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(5, 20);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(29, 31);
-            this.button18.TabIndex = 19;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.BtnLeftAlign.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnLeftAlign.FlatAppearance.BorderSize = 0;
+            this.BtnLeftAlign.Image = ((System.Drawing.Image)(resources.GetObject("BtnLeftAlign.Image")));
+            this.BtnLeftAlign.Location = new System.Drawing.Point(5, 20);
+            this.BtnLeftAlign.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnLeftAlign.Name = "BtnLeftAlign";
+            this.BtnLeftAlign.Size = new System.Drawing.Size(29, 31);
+            this.BtnLeftAlign.TabIndex = 19;
+            this.BtnLeftAlign.UseVisualStyleBackColor = false;
+            this.BtnLeftAlign.Click += new System.EventHandler(this.BtnLeftAlign_Click);
             // 
-            // button15
+            // BtnRightAlign
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(91, 20);
-            this.button15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(29, 31);
-            this.button15.TabIndex = 16;
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.BtnRightAlign.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnRightAlign.FlatAppearance.BorderSize = 0;
+            this.BtnRightAlign.Image = ((System.Drawing.Image)(resources.GetObject("BtnRightAlign.Image")));
+            this.BtnRightAlign.Location = new System.Drawing.Point(91, 20);
+            this.BtnRightAlign.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnRightAlign.Name = "BtnRightAlign";
+            this.BtnRightAlign.Size = new System.Drawing.Size(29, 31);
+            this.BtnRightAlign.TabIndex = 16;
+            this.BtnRightAlign.UseVisualStyleBackColor = false;
+            this.BtnRightAlign.Click += new System.EventHandler(this.BtnRightAlign_Click);
             // 
-            // button17
+            // BtnCenterAlign
             // 
-            this.button17.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(48, 20);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(29, 31);
-            this.button17.TabIndex = 18;
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.BtnCenterAlign.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnCenterAlign.FlatAppearance.BorderSize = 0;
+            this.BtnCenterAlign.Image = ((System.Drawing.Image)(resources.GetObject("BtnCenterAlign.Image")));
+            this.BtnCenterAlign.Location = new System.Drawing.Point(48, 20);
+            this.BtnCenterAlign.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCenterAlign.Name = "BtnCenterAlign";
+            this.BtnCenterAlign.Size = new System.Drawing.Size(29, 31);
+            this.BtnCenterAlign.TabIndex = 18;
+            this.BtnCenterAlign.UseVisualStyleBackColor = false;
+            this.BtnCenterAlign.Click += new System.EventHandler(this.BtnCenterAlign_Click);
             // 
             // BtnStrikethrough
             // 
@@ -962,9 +962,9 @@
             this.panel4.Controls.Add(this.ParagraphLabel);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button18);
-            this.panel4.Controls.Add(this.button15);
-            this.panel4.Controls.Add(this.button17);
+            this.panel4.Controls.Add(this.BtnLeftAlign);
+            this.panel4.Controls.Add(this.BtnRightAlign);
+            this.panel4.Controls.Add(this.BtnCenterAlign);
             this.panel4.Location = new System.Drawing.Point(637, 31);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
@@ -1069,9 +1069,9 @@
         private System.Windows.Forms.Button BtnItalic;
         private System.Windows.Forms.Button BtnColor;
         private System.Windows.Forms.Button BtnReduction;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button BtnLeftAlign;
+        private System.Windows.Forms.Button BtnRightAlign;
+        private System.Windows.Forms.Button BtnCenterAlign;
         private System.Windows.Forms.Button BtnStrikethrough;
         private System.Windows.Forms.Button BtnBold;
         private System.Windows.Forms.Button BtnUnder;

@@ -235,21 +235,21 @@ namespace HCI_Project
 
         //$$$$$$$$$$$$$$단락 영역$$$$$$$$$$$$$$$
         //텍스트 왼쪽 정렬
-        private void button18_Click(object sender, EventArgs e)
+        private void BtnLeftAlign_Click(object sender, EventArgs e)
         {
             TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Left;
         }
 
         //텍스트 가운데 정렬
-        private void button17_Click(object sender, EventArgs e)
+        private void BtnCenterAlign_Click(object sender, EventArgs e)
         {
             TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Center;
         }
 
         //텍스트 오른쪽 정렬
-        private void button15_Click(object sender, EventArgs e)
+        private void BtnRightAlign_Click(object sender, EventArgs e)
         {
             TextEdit.Select();
             TextEdit.SelectionAlignment = HorizontalAlignment.Right;
