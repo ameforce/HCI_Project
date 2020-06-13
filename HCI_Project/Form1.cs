@@ -322,11 +322,7 @@ namespace HCI_Project
             }
         }
 
-        //도움말-정보
-        private void 정보ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("제작: 김종인, 이단일, 김민주", " Text Editor 정보");
-        }
+
 
 
 
@@ -406,6 +402,13 @@ namespace HCI_Project
         {
             Manual aa = new Manual();
             aa.Show();
+        }
+
+        //도움말-정보
+        private void 정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Information I = new Information();
+            I.Show();
         }
         //###################################################################
 
