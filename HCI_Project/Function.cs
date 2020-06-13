@@ -15,7 +15,7 @@ namespace HCI_Project
         public Function() { }   //생성자
 
         //파일 존재 여부 체크.
-        public Boolean check_File(string route)
+        public Boolean CheckFile(string route)
         {
             FileInfo fi = new FileInfo(route);
             if (fi.Exists) return true;
@@ -23,17 +23,17 @@ namespace HCI_Project
         }
 
         //현재 텍스트와 저장된 파일의 일치 여부 체크.
-        public Boolean check_Content(string route, string content)
+        public Boolean CheckContent(string route, string content)
         {
             string temp_data = System.IO.File.ReadAllText(route, Encoding.Default);
             return temp_data.Equals(content);
         }
 
         //파일 저장
-        public Boolean save_File(string text, string route)
+        public Boolean SaveFile(string text, string route)
         {
             System.IO.File.WriteAllText(route, text, Encoding.Default);
-            if (check_File(route)) return true;
+            if (CheckFile(route)) return true;
             else
             {
                 MessageBox.Show("알 수 없는 오류로 파일 저장에 실패했습니다.");
@@ -42,10 +42,10 @@ namespace HCI_Project
         }
 
         //파일 열기
-        public String open_File(string route){ return System.IO.File.ReadAllText(route, Encoding.Default); }
+        public String OpenFile(string route){ return System.IO.File.ReadAllText(route, Encoding.Default); }
 
         //프로그램 타이틀에 저장 여부 표시.
-        public void change_Title(Boolean TF, string route)
+        public void ChangeTitle(Boolean TF, string route)
         {
             string temp_data;
             if (route == null) route = "이름 없음";
@@ -77,8 +77,9 @@ namespace HCI_Project
         }
 
         //텍스트 찾기 및 바꾸기
-        public int Change_Text(TextBox tb, RichTextBox rt)
+        public int ChangeText(RichTextBox rt, TextBox tb)
         {
+            
             rt.SelectionStart = 0;
             rt.SelectionLength = rt.Text.Length;
             rt.SelectionColor = Color.Black;
@@ -106,7 +107,7 @@ namespace HCI_Project
             if (text.Length > num)
             {
                 temp_text = text.Substring(0, num);
-                temp_text = temp_text + "...";
+                temp_text += "...";
             }
             else{ temp_text = text; }
             return temp_text;

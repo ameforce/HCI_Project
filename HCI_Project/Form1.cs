@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 
 namespace HCI_Project
 {
@@ -27,8 +28,6 @@ namespace HCI_Project
             default_font_size = (int)TextEdit.SelectionFont.Size;
         }
 
-
-        private RichTextBox doc;
         public class EnterKeyEventArgs : EventArgs
         {
             private bool _cancel = false;
@@ -50,12 +49,12 @@ namespace HCI_Project
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Function f = new Function();
-                if (f.save_File(TextEdit.Text, saveFileDialog.FileName))
+                if (f.SaveFile(TextEdit.Text, saveFileDialog.FileName))
                 {
                     route = saveFileDialog.FileName;
                     string[] temp_data = route.Split('\\');
                     f.ChangeLabel(EditLabel, f.StringSummary(temp_data[temp_data.Length - 1], edit_label_num) + "가 저장되었습니다.");
-                    f.change_Title(f.check_Content(route, TextEdit.Text), route);
+                    f.ChangeTitle(f.CheckContent(route, TextEdit.Text), route);
                 }
             }
         }
@@ -113,7 +112,7 @@ namespace HCI_Project
             TextEdit.Text = "";
             temp_data = "새 파일이 생성되었습니다.";
             f.ChangeLabel(EditLabel, temp_data);
-            f.change_Title(false, route);
+            f.ChangeTitle(false, route);
         }
 
         //불러오기
@@ -123,10 +122,10 @@ namespace HCI_Project
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 route = openFileDialog.FileName;
-                TextEdit.Text = f.open_File(openFileDialog.FileName);
+                TextEdit.Text = f.OpenFile(openFileDialog.FileName);
                 string[] temp_data = route.Split('\\');
                 f.ChangeLabel(EditLabel, f.StringSummary(temp_data[temp_data.Length - 1], edit_label_num) + " 파일을 불러왔습니다.");
-                f.change_Title(true, route);
+                f.ChangeTitle(true, route);
             }
         }
 
@@ -276,22 +275,60 @@ namespace HCI_Project
             Search.SelectAll();
         }
 
-        //바꾸기
-        private void BtnFindAndChange_Click(object sender, EventArgs e)
+        //하나 바꾸기
+        private void BtnSingleChange_Click(object sender, EventArgs e)
         {
-            status = "FindAndChange";
-            Search.ReadOnly = false;
-            Search.Focus();
-            Search.SelectAll();
+            if (status != "Change")
+            {
+                status = "Change";
+                Change.ReadOnly = false;
+                Change.Focus();
+                Change.SelectAll();
+            }
+            else
+            {
+                var regax = new Regex(Regex.Escape(Search.Text));
+                TextEdit.Text = regax.Replace(TextEdit.Text, Change.Text, 1);
+                int count = f.Find_Text(Search, TextEdit);
+                SearchStatus.Text = count + "개 찾음";
+            }
+        }
+
+        //전부 바꾸기
+        private void BtnAllChange_Click(object sender, EventArgs e)
+        {
+            if (status != "Change")
+            {
+                status = "Change";
+                Change.ReadOnly = false;
+                Change.Focus();
+                Change.SelectAll();
+            }
+            else
+            {
+                TextEdit.Text = TextEdit.Text.Replace(Search.Text, Change.Text);
+                int count = f.Find_Text(Search, TextEdit);
+                SearchStatus.Text = count + "개 찾음";
+            }
         }
 
         //Search 내용 변경 시 status에 따라 찾기 및 바꾸기 수행.
         private void Search_TextChanged(object sender, EventArgs e)
         {
-            if (status == "Find" || status == "FindAndChange")   //찾기 & 바꾸기
+            if (status == "Find" || status == "Change")   //찾기 & 바꾸기
             {
                 int count = f.Find_Text(Search, TextEdit);
                 SearchStatus.Text = count + "개 찾음";
+                if (count != 0)
+                {
+                    BtnSingleChange.Enabled = true;
+                    BtnAllChange.Enabled = true;
+                }
+                else
+                {
+                    BtnSingleChange.Enabled = false;
+                    BtnAllChange.Enabled = false;
+                }
             }
         }
         //###################################################################
@@ -314,7 +351,7 @@ namespace HCI_Project
         {
             string temp_data = ActiveForm.Text;
             if (temp_data.Contains("(저장됨)") || temp_data == "TEXT EDITOR")
-                f.change_Title(false, route);
+                f.ChangeTitle(false, route);
         }
 
 
@@ -407,6 +444,8 @@ namespace HCI_Project
             Information I = new Information();
             I.Show();
         }
+
+
         //###################################################################
 
     }
