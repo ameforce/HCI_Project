@@ -495,8 +495,6 @@ namespace HCI_Project
         }
         private void button1_Click(object sender, EventArgs e)
         {
-          
-         
             if (flag)
             {
                  f.ChangeLabel(ParagraphLabel, "글머리 적용 해제"); 
