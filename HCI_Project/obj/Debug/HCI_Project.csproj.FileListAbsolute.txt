@@ -46,3 +46,6 @@ C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug
 C:\Users\enmso\OneDrive\Workspace\Workspace_C#\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Change.resources
 C:\Users\kmj41\Documents\GitHub\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Change.resources
 C:\Users\kmj41\Documents\GitHub\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Information.resources
+C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Change.resources
+C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Information.resources
+C:\Users\ldi01\Desktop\HCI_Project\HCI_Project\obj\Debug\HCI_Project.Manual.resources

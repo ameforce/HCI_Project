@@ -22,11 +22,19 @@ namespace HCI_Project
         private int edit_label_num = 8;
         private int font_label_num = 4;
         private int default_font_size;
+        bool flag = true;
         public Form1()
         {
             InitializeComponent();
             default_font_size = (int)TextEdit.SelectionFont.Size;
+            InitGui();
         }
+        private void InitGui()
+        {
+            flag = false;
+         
+        }
+
 
         public class EnterKeyEventArgs : EventArgs
         {
@@ -447,6 +455,58 @@ namespace HCI_Project
             I.Show();
         }
 
+  //숫자매기기
+
+        private void TextEdit_KeyDown(object sender, KeyEventArgs e)
+        {
+            {
+                if (flag)
+                {
+                    int tempNum;
+                    if (e.KeyCode == Keys.Enter)
+                    {
+                        try
+                        {
+                            if (char.IsDigit(TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine()]))
+                            {
+                                if (char.IsDigit(TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine() + 1]) && TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine() + 2] == '.')
+                                    tempNum = int.Parse(TextEdit.Text.Substring(TextEdit.GetFirstCharIndexOfCurrentLine(), 2));
+                                else tempNum = int.Parse(TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine()].ToString());
+
+                                if (TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine() + 1] == '.' || (char.IsDigit(TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine() + 1]) && TextEdit.Text[TextEdit.GetFirstCharIndexOfCurrentLine() + 2] == '.'))
+                                {
+                                    tempNum++;
+                                    TextEdit.SelectedText = "\r\n" + tempNum.ToString() + ". ";
+                                    e.SuppressKeyPress = true;
+                                }
+                            }
+                            else
+                            {
+                                tempNum = TextEdit.Lines.Length;
+                                TextEdit.SelectedText = "\r\n" + tempNum.ToString() + ". ";
+                                e.SuppressKeyPress = true;
+                            }
+                        }
+                        catch { }
+                    }
+                }
+            }
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+         
+            if (flag)
+            {
+                 f.ChangeLabel(ParagraphLabel, "글머리 적용 해제"); 
+            }
+            else
+            {
+                  f.ChangeLabel(ParagraphLabel, "글머리 적용 완료");
+            }
+            flag = !flag;
+        }
 
         //###################################################################
 

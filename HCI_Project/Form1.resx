@@ -623,6 +623,18 @@
   <metadata name="contextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>654, 53</value>
   </metadata>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAXtJREFUOE+tlL1KA0EUhWf/N1mSoDbpdi1MEUgVAtvlKQLqC4idnY2aINqKlY2l
+        iFXUQhBsRLBPZeMjqNFCyxj9JgadTWajQg4czu79m5k7d1d4nnds2/a90ADfrmmar/BtEl3XPRBBECyl
+        FTIM4xH5+I3EvaMimFDoCdEmqyROanohtnyCjCWO0nGcK1S4FFqXD6NoNptmoVCI4Pwk1ut1e5gyBeRy
+        uZgjbKELQ1MClUplplarzaUxjuNZwgx5xRf5fH6R411+pf6ABQ4RbV9U0qNTdDAv27y0Bi8K/nFrfZHJ
+        ZFYpclatVh2MCRDw1znqC47UY0dtCu5gTAD7/iBIk6ySuCNUmAp1UP1pnCLYVovbueVoK0PTNxqNhoVP
+        jkUpjfhL5XLZlXO0FkVRaFlWB0cCXEIb0fZFJXHXIgxDX35r2Wx2A2MCNLqLaJPH6Pv+crFYlDu6w5AA
+        /5oHRJ+okAV7skfn8Eb2CmMCLLLJAl0KvqQR/7PneXufuIGlCv5hbvsAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>338, 17</value>
   </metadata>
