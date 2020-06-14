@@ -45,7 +45,7 @@ namespace HCI_Project
         //파일저장
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            saveFileDialog.Filter = "텍스트파일|*.txt";
+            saveFileDialog.Filter = "텍스트파일|*.rtb";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Function f = new Function();
