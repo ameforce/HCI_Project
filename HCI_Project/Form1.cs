@@ -127,7 +127,7 @@ namespace HCI_Project
         //불러오기
         private void BtnOpen_Click(object sender, EventArgs e)
         {
-            openFileDialog.Filter = "텍스트파일|*.txt";
+            openFileDialog.Filter = "텍스트파일|*.rtb";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 route = openFileDialog.FileName;
